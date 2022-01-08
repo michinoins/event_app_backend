@@ -1,0 +1,1270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Language" content="ja" /> 
+<meta http-equiv="Content-Style-Type" content="text/css" /> 
+<title>Doma - SQLファイル</title>
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/main.css" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/print.css" media="print" />
+<link href="../css/maven-base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/maven-theme.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+
+<div id="wrapper">
+
+<div id="header">
+
+<div class="line"><span class="hide">spacer</span></div>
+
+<div id="logo"><h1 id="h01" class="hide">The Seasar Project</h1><a href="http://www.seasar.org/" alt="The Seasar Project" title="The Seasar Project"><img src="http://www.seasar.org/images/seasar_logo_blue.gif" alt="The Seasar Project" width="390" height="180" /></a></div>
+
+<div id="tool">
+
+<h2><a href="http://search.seasar.org/">Site Search</a></h2>
+
+<form id="search" action="http://search.seasar.org/">
+<div>
+	<input id="search_phrase" type="text" name="phrase" size="20" />
+	<input type="hidden" name="perpage" value="30" />
+	<input type="hidden" name="enc" value="UTF-8" />
+	<input id="search_go" type="submit" value="Search" />
+</div>
+</form>
+
+<h2>Seasar Banner</h2>
+            <a href="http://www.seasar.org/" id="bannerLeft">
+    
+                                    <img src="http://www.seasar.org/images/seasar_banner.gif" alt="" />
+    
+            </a>
+      
+</div>
+
+<div id="navi">
+	<p id="navi_left">  
+          <a href="http://www.seasar.org/">Seasar</a>
+              &gt;
+      
+          <a href="../index.html">Doma</a>
+          </p>
+	<p id="navi_right"><a href="../../en/">English</a> | <a href="../../ja/">Japanese</a></p>
+</div>
+
+</div><!-- header -->
+
+<div id="contents_left">
+           
+  
+
+  
+    
+  
+  
+                   <h2>About</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../index.html">ホーム</a>
+        </li>
+              
+    <li class="none">
+              <a href="../overview.html">概要</a>
+        </li>
+              
+    <li class="none">
+              <a href="../downloads.html">ダウンロード</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA">課題追跡</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">変更履歴</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://ml.seasar.org/mailman/listinfo/seasar-user">メーリングリスト</a>
+        </li>
+              
+    <li class="none">
+              <a href="../faq.html">よくある質問</a>
+        </li>
+          </ul>
+          <h2>ドキュメント</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../setup.html">セットアップ</a>
+        </li>
+              
+    <li class="none">
+              <a href="../quick_start.html">クイックスタート</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../tutorial/index.html">チュートリアル</a>
+              </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+                  
+      
+            
+            
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+              <a href="../reference/index.html">リファレンス</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="../reference/basic.html">基本型</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/domain.html">ドメインクラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/entity.html">エンティティクラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/dao.html">Daoインタフェース</a>
+        </li>
+                  
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../reference/query/index.html">クエリ</a>
+              </li>
+                  
+    <li class="none">
+              <a href="../reference/config.html">設定クラス</a>
+        </li>
+                  
+    <li class="none">
+              <strong>SQLファイル</strong>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/transaction.html">トランザクション</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/apt.html">注釈処理</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/app_build.html">アプリケーションのビルド方法</a>
+        </li>
+              </ul>
+        </li>
+              
+    <li class="none">
+              <a href="../jpetstore.html">デモアプリ - Doma JPetStore</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+                    
+        <li class="collapsed">
+              <a href="../extension/index.html">開発支援ツール</a>
+              </li>
+              
+    <li class="none">
+              <a href="http://www.seasar.org/wiki/index.php?DomaUpdateOperationLog">移行ガイド</a>
+        </li>
+          </ul>
+          <h2>Javadocs</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../apidocs/index.html">Doma</a>
+        </li>
+              
+    <li class="none">
+              <a href="../extension/doma-gen/apidocs/index.html">Doma-Gen</a>
+        </li>
+          </ul>
+          <h2>プロジェクト文書</h2>
+        <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../project-info.html">プロジェクト情報</a>
+              </li>
+          </ul>
+                                       <a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy" name="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png" />
+          </a>
+                       
+  
+
+  
+    
+  
+  
+  </div><!-- contents_left -->
+
+<div id="contents_center">
+
+<div id="article">
+<div class="section"><h2><a name="目次"></a>目次</h2>
+<ul><li><a href="#概要">概要</a></li>
+<li><a href="#SQLファイルにマッピングするためのアノテーション">SQLファイルにマッピングするためのアノテーション</a></li>
+<li><a href="#SQLファイル">SQLファイル</a><ul><li><a href="#配置場所">配置場所</a></li>
+<li><a href="#ファイル名の形式">ファイル名の形式</a></li>
+<li><a href="#エンコーディング">エンコーディング</a></li>
+</ul>
+</li>
+<li><a href="#SQLコメント">SQLコメント</a><ul><li><a href="#バインド変数コメント">バインド変数コメント</a><ul><li><a href="#基本型もしくはドメインクラス型のパラメータ">基本型もしくはドメインクラス型のパラメータ</a></li>
+<li><a href="#Iterable型のパラメータ">Iterable型のパラメータ</a></li>
+<li><a href="#任意の型のパラメータ">任意の型のパラメータ</a></li>
+</ul>
+</li>
+<li><a href="#埋め込み変数コメント">埋め込み変数コメント</a></li>
+<li><a href="#条件コメント">条件コメント</a><ul><li><a href="#ifとend">ifとend</a></li>
+<li><a href="#条件コメントにおけるWHEREやHAVINGの自動除去">条件コメントにおけるWHEREやHAVINGの自動除去</a></li>
+<li><a href="#条件コメントにおけるANDやORの自動除去">条件コメントにおけるANDやORの自動除去</a></li>
+<li><a href="#elseifとelse">elseifとelse</a></li>
+<li><a href="#ネストした条件コメント">ネストした条件コメント</a></li>
+<li><a href="#条件コメントにおける制約">条件コメントにおける制約</a></li>
+</ul>
+</li>
+<li><a href="#繰り返しコメント">繰り返しコメント</a><ul><li><a href="#forとend">forとend</a></li>
+<li><a href="#item_has_nextとitem_index">item_has_nextとitem_index</a></li>
+<li><a href="#繰り返しコメントにおけるWHEREやHAVINGの自動除去">条件コメントにおけるWHEREやHAVINGの自動除去</a></li>
+<li><a href="#繰り返しコメントにおけるANDやORの自動除去">条件コメントにおけるANDやORの自動除去</a></li>
+<li><a href="#繰り返しコメントにおける制約">繰り返しコメントにおける制約</a></li>
+</ul>
+</li>
+<li><a href="#通常のブロックコメント">通常のブロックコメント</a></li>
+<li><a href="#通常の行コメント">通常の行コメント</a></li>
+</ul>
+</li>
+<li><a href="#式言語">式言語</a><ul><li><a href="#リテラル">リテラル</a></li>
+<li><a href="#比較演算子">比較演算子</a></li>
+<li><a href="#論理演算子">論理演算子</a></li>
+<li><a href="#算術演算子">算術演算子</a></li>
+<li><a href="#その他の演算子">その他の演算子</a></li>
+<li><a href="#インスタンスメソッドの呼び出し">インスタンスメソッドの呼び出し</a></li>
+<li><a href="#インスタンスフィールドへのアクセス">インスタンスフィールドへのアクセス</a></li>
+<li><a href="#staticメソッドの呼び出し">staticメソッドの呼び出し</a></li>
+<li><a href="#staticフィールドへのアクセス">staticフィールドへのアクセス</a></li>
+<li><a href="#組み込み関数の使用">組み込み関数の使用</a></li>
+<li><a href="#カスタム関数の使用">カスタム関数の使用</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section"><h2><a name="概要"></a>概要</h2>
+<p>
+				SQLファイルは、SQL文を格納したテキストファイルで、Daoのメソッドにマッピングされます。
+				SQLのブロックコメント(/* */)や行コメント(--)を使用することで、バインド変数や動的なSQLのための条件分岐を表現できます。
+				SQLのツールでそのままそのSQLを実行できるように、バインド変数にはテスト用のデータを指定します。テスト用のデータは、実行時には使用されません。
+				たとえば、SQLファイルには次のようなSQL文が格納されます。
+			</p>
+<div class="source"><pre>select * from employee where employee_id = /* employeeId */99</pre>
+</div>
+<p>
+				ここでは、ブロックコメントで囲まれた <code>employeeId</code>がDaoインタフェースのメソッドのパラメータに対応し、
+				直後の <code>99</code>はテスト用の条件になります。
+				対応するDaoインタフェースのメソッドは次のとおりです。
+			</p>
+<div class="source"><pre>Employee selectById(employeeId);</pre>
+</div>
+</div>
+<div class="section"><h2><a name="SQLファイルにマッピングするためのアノテーション"></a>SQLファイルにマッピングするためのアノテーション</h2>
+<p>
+				SQLファイルとDaoのメソッドのマッピングは次のアノテーションで示します。
+			</p>
+<ul><li><a href="../apidocs/org/seasar/doma/Select.html"><code>@Select</code></a></li>
+<li><a href="../apidocs/org/seasar/doma/Insert.html"><code>@Insert(sqlFile = true)</code></a></li>
+<li><a href="../apidocs/org/seasar/doma/Update.html"><code>@Update(sqlFile = true)</code></a></li>
+<li><a href="../apidocs/org/seasar/doma/Delete.html"><code>@Delete(sqlFile = true)</code></a></li>
+<li><a href="../apidocs/org/seasar/doma/BatchInsert.html"><code>@BatchInsert(sqlFile = true)</code></a></li>
+<li><a href="../apidocs/org/seasar/doma/BatchUpdate.html"><code>@BatchUpdate(sqlFile = true)</code></a></li>
+<li><a href="../apidocs/org/seasar/doma/BatchDelete.html"><code>@BatchDelete(sqlFile = true)</code></a></li>
+</ul>
+</div>
+<div class="section"><h2><a name="SQLファイル"></a>SQLファイル</h2>
+<div class="section"><h3><a name="配置場所"></a>配置場所</h3>
+<p>
+					SQLファイルはクラスパスが通った  <code>META-INF</code> ディレクトリ以下に配置しなければいけません。
+				</p>
+</div>
+<div class="section"><h3><a name="ファイル名の形式"></a>ファイル名の形式</h3>
+<p>
+					ファイル名は、次の形式でなければいけません。
+				</p>
+<div class="source"><pre>META-INF/Daoのクラスの完全修飾名をディレクトリに変換したもの/Daoのメソッド名.sql</pre>
+</div>
+<p>
+					例えば、 Daoのクラスが <code>aaa.bbb.EmployeeDao</code>で
+					マッピングしたいメソッドが <code>selectById</code> の場合、パス名は次のようになります。
+				</p>
+<div class="source"><pre>META-INF/aaa/bbb/EmployeeDao/selectById.sql</pre>
+</div>
+<p>
+					複数のRDBMSに対応する必要があり特定のRDBMSでは別のSQLファイルを使いたい場合、
+					<code>.sql</code> の前にハイフン区切りでRDBMS名を入れることで、優先的に使用するファイルを指示できます。
+					たとえば、PostgreSQL専用のSQLファイルは次の名前にします。
+				</p>
+<div class="source"><pre>META-INF/aaa/bbb/EmployeeDao/selectById-postgres.sql</pre>
+</div>
+<p>
+					この場合、PostgreSQLを使用している場合に限り、<code>META-INF/aaa/bbb/EmployeeDao/selectById.sql</code> よりも
+					<code>META-INF/aaa/bbb/EmployeeDao/selectById-postgres.sql</code> が優先的に使用されます。
+				</p>
+<p>
+					RDBMS名は、 <code>org.seasar.doma.jdbc.dialect.Dialect</code>の <code>getName</code>メソッドの値が使用されます。
+					あらかじめ用意されたDialectについてそれぞれのRDBMS名を以下の表に示します。
+				</p>
+<table class="bodyTable"><tr class="a"><th>データベース</th>
+<th>方言クラスの名前</th>
+<th>RDBMS名</th>
+</tr>
+<tr class="b"><td>DB2</td>
+<td><code>org.seasar.doma.jdbc.dialect.Db2Dialect</code></td>
+<td>db2</td>
+</tr>
+<tr class="a"><td>H2 Database Engine 1.2.126</td>
+<td><code>org.seasar.doma.jdbc.dialect.H212126Dialect</code></td>
+<td>h2</td>
+</tr>
+<tr class="b"><td>H2 Database Engine</td>
+<td><code>org.seasar.doma.jdbc.dialect.H2Dialect</code></td>
+<td>h2</td>
+</tr>
+<tr class="a"><td>HSQLDB</td>
+<td><code>org.seasar.doma.jdbc.dialect.HsqldbDialect</code></td>
+<td>hsqldb</td>
+</tr>
+<tr class="b"><td>Microsoft SQL Server 2008</td>
+<td><code>org.seasar.doma.jdbc.dialect.Mssql2008Dialect</code></td>
+<td>mssql2008</td>
+</tr>
+<tr class="a"><td>Microsoft SQL Server</td>
+<td><code>org.seasar.doma.jdbc.dialect.MssqlDialect</code></td>
+<td>mssql</td>
+</tr>
+<tr class="b"><td>MySQL</td>
+<td><code>org.seasar.doma.jdbc.dialect.MySqlDialect</code></td>
+<td>mysql</td>
+</tr>
+<tr class="a"><td>Oracle Database</td>
+<td><code>org.seasar.doma.jdbc.dialect.OracleDialect</code></td>
+<td>oracle</td>
+</tr>
+<tr class="b"><td>PostgreSQL</td>
+<td><code>org.seasar.doma.jdbc.dialect.PostgresDialect</code></td>
+<td>postgres</td>
+</tr>
+<tr class="a"><td>SQLite</td>
+<td><code>org.seasar.doma.jdbc.dialect.SqliteDialect</code></td>
+<td>sqlite</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="エンコーディング"></a>エンコーディング</h3>
+<p>
+					SQLファイルのエンコーディングはUTF-8でなければいけません。
+				</p>
+</div>
+</div>
+<div class="section"><h2><a name="SQLコメント"></a>SQLコメント</h2>
+<p>
+				Domaでは、SQLコメント中に式を記述することで、値のバインディングや条件分岐を行います。
+				Domaに解釈されるSQLコメントを<strong>式コメント</strong>と呼びます。
+			</p>
+<div class="section"><h3><a name="バインド変数コメント"></a>バインド変数コメント</h3>
+<p>
+					バインド変数を示す式コメントをバインド変数コメントと呼びます。
+					バインド変数は、<code>java.sql.PreparedStatement</code>を介してSQLに設定されます。
+				</p>
+<p>
+					バインド変数は/*～*/というブロックコメントで囲んで示します。
+					バインド変数の名前は、Daoメソッドのパラメータ名に対応します。
+					対応するパラメータの型は、<a href="basic.html">基本型</a>もしくは<a href="domain.html">ドメインクラス</a>でなければいけません。
+					バインド変数コメントの直後にはテスト用データを指定する必要があります。
+					テスト用データは、実行時には使用されません。
+				</p>
+<h4><a name="基本型もしくはドメインクラス型のパラメータ"></a>基本型もしくはドメインクラス型のパラメータ</h4>
+<p>
+					Daoインタフェースのメソッドのパラメータが<a href="basic.html">基本型</a>もしくは<a href="domain.html">ドメインクラス</a>の場合、
+					このパラメータは、1つのバインド変数を表現できます。
+					バインド変数コメントはバインド変数を埋め込みたい場所に記述し、バインド変数コメントの直後にはテスト用データを指定しなければいけません。
+					Daoインタフェースのメソッドと、対応するSQLの例は次のとおりです。
+				</p>
+<div class="source"><pre>Employee selectById(Integer employeeId);</pre>
+</div>
+<div class="source"><pre>select * from employee where employee_id = /* employeeId */99</pre>
+</div>
+<h4><a name="Iterable型のパラメータ"></a><code>Iterable</code>型のパラメータ</h4>
+<p>
+					Daoインタフェースのメソッドのパラメータが<code>java.lang.Iterable</code>のサブタイプの場合、
+					このパラメータは、IN句内の複数のバインド変数を表現できます。
+					ただし、<code>java.lang.Iterable</code>のサブタイプの実型引数は基本型もしくはドメインクラスでなければいけません。
+					バインド変数コメントはINキーワードの直後に置き、バインド変数コメントの直後には括弧つきでテスト用データを指定しなければいけません。
+					Daoインタフェースのメソッドと、対応するSQLの例は次のとおりです。
+				</p>
+<div class="source"><pre>List&lt;Employee&gt; selectByIdList(List&lt;Integer&gt; employeeIdList);</pre>
+</div>
+<div class="source"><pre>select * from employee where employee_id in /* employeeIdList */(1,2,3)</pre>
+</div>
+<h4><a name="任意の型のパラメータ"></a>任意の型のパラメータ</h4>
+<p>
+					Daoインタフェースのメソッドのパラメータが<a href="basic.html">基本型</a>もしくは<a href="domain.html">ドメインクラス</a>でない場合、
+					パラメータは、複数のバインド変数コメントに対応します。
+					バインド変数コメントの中では、ドット（.）を使用し任意の型のフィールドやメソッドにアクセスできます。
+					Daoインタフェースのメソッドと、対応するSQLの例は次のとおりです。
+					EmployeeDtoクラスには、employeeNameフィールドやsalaryフィールドが存在するものとします。
+				</p>
+<div class="source"><pre>List&lt;Employee&gt; selectByNameAndSalary(EmployeeDto dto);</pre>
+</div>
+<div class="source"><pre>select * from employee
+where
+employee_name = /* dto.employeeName */'abc' 
+and
+salary = /* dto.salary */1234</pre>
+</div>
+<p>
+					フィールドにアクセスする代わりに、publicなメソッドを呼び出すことも可能です。
+				</p>
+<div class="source"><pre>select * from employee
+where
+salary = /* dto.getTaxedSalary() */1234</pre>
+</div>
+</div>
+<div class="section"><h3><a name="埋め込み変数コメント"></a>埋め込み変数コメント</h3>
+<p>
+					埋め込み変数を示す式コメントを埋め込み変数コメントと呼びます。
+					埋め込み変数の値は、SQLを組み立てる際にSQLの一部として直接埋め込まれます。
+					SQLインジェクションを防ぐため、埋め込み変数の値にシングルクォテーション、セミコロン、行コメント、ブロックコメントは含めることを禁止しています。
+				</p>
+<p>
+					埋め込み変数は/*#～*/というブロックコメントで示します。埋め込み変数の名前はDaoメソッドのパラメータ名にマッピングされます。
+					埋め込み変数はORDER BY句など、SQLの一部をプログラムで組み立てたい場合に使用できます。
+					Daoのメソッドと、対応するSQLの例は次のとおりです。
+				</p>
+<div class="source"><pre>List&lt;Employee&gt; selectAll(BigDecimal salary, String orderyBy);</pre>
+</div>
+<div class="source"><pre>select * from employee where salary &gt; /* salary */100 /*# orderBy */</pre>
+</div>
+<p>
+					Daoの呼び出し例は次の通りです。
+				</p>
+<div class="source"><pre>EmployeeDao dao = new EmployeeDaoImpl();
+BigDecimal salary = new BigDecimal(1000);
+String orderBy = &quot;order by salary asc, employee_name&quot;;
+List&lt;Employee&gt; list = dao.selectAll(salary, orderBy);</pre>
+</div>
+<p>
+					発行されるSQLは次のようになります。
+				</p>
+<div class="source"><pre>select * from employee where salary &gt; ? order by salary asc, employee_name</pre>
+</div>
+</div>
+<div class="section"><h3><a name="条件コメント"></a>条件コメント</h3>
+<h4><a name="ifとend"></a>ifとend</h4>
+<p>
+					条件分岐を示す式コメントを条件コメントと呼びます。
+					構文は、次のとおりです。
+<div class="source"><pre>/*%if 条件式*/ ～ /*%end*/</pre>
+</div>
+
+					条件式は、結果がbooleanもしくはjava.lang.Boolean型と評価される式でなければいけません。
+					例を示します。
+				</p>
+<p></p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeId != null */
+    employee_id = /* employeeId */99
+/*%end*/</pre>
+</div>
+<p>
+					上記のSQL文は、 <code>employeeId</code>が <code>null</code>でない場合 次のような準備された文に変換されます。
+				</p>
+<div class="source"><pre>select * from employee where employee_id = ?</pre>
+</div>
+<p>
+					このSQL文は、 <code>employeeId</code>が<code>null</code>の場合に次のような準備された文に変換されます。
+				</p>
+<div class="source"><pre>select * from employee</pre>
+</div>
+<p>
+					ifの条件が成り立たない場合にifの外にあるWHERE句が出力されないのは、<code>WHERE</code>や <code>HAVING</code>の自動除去機能が働いているためです。
+				</p>
+<h4><a name="条件コメントにおけるWHEREやHAVINGの自動除去"></a>条件コメントにおけるWHEREやHAVINGの自動除去</h4>
+<p>
+					条件コメントを使用した場合、条件の前にあるWHEREやHAVINGについて、自動で出力の要/不要を判定します。
+					たとえば、次のようなSQLで<code>employeeId</code>が <code>null</code>の場合、
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeId != null */
+    employee_id = /* employeeId */99
+/*%end*/</pre>
+</div>
+<p><code>/*%if ～*/</code>の前の <code>where</code>は自動で除去され、次のSQLが生成されます。
+				</p>
+<div class="source"><pre>select * from employee</pre>
+</div>
+<h4><a name="条件コメントにおけるANDやORの自動除去"></a>条件コメントにおけるANDやORの自動除去</h4>
+<p>
+					条件コメントを使用した場合、条件の後ろにつづくANDやORについて、自動で出力の要/不要を判定します。
+					たとえば、次のようなSQLで<code>employeeId</code>が <code>null</code>の場合、
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeId != null */
+    employee_id = /* employeeId */99
+/*%end*/
+and employeeName like 's%'</pre>
+</div>
+<p><code>/*%end*/</code>の後ろの <code>and</code> は自動で除去され、次のSQLが生成されます。
+				</p>
+<div class="source"><pre>select * from employee where employeeName like 's%'</pre>
+</div>
+<h4><a name="elseifとelse"></a>elseifとelse</h4>
+<p><code>/*%if 条件式*/</code> と <code>/*%end*/</code> の間では、
+					elseifやelseを表す次の構文も使用できます。
+				</p>
+<div class="source"><pre>/*%elseif 条件式*/</pre>
+</div>
+<div class="source"><pre>/*%else*/</pre>
+</div>
+<p>
+					例を示します。
+				</p>
+<div class="source"><pre>select 
+  * 
+from
+  employee 
+where 
+/*%if employeeId != null */
+  employee_id = /* employeeId */9999
+/*%elseif department_id != null */ 
+  and
+  department_id = /* departmentId */99
+/*%else*/
+  and
+  department_id is null
+/*%end*/</pre>
+</div>
+<p>
+					上のSQLは、employeeId != null が成立するとき実際は次のSQLに変換されます。
+				</p>
+<div class="source"><pre>select 
+  * 
+from
+  employee 
+where 
+  employee_id = ?</pre>
+</div>
+<p>
+					employeeId == null &amp;&amp; department_id != null が成立するとき、実際は次のSQLに変換されます。
+					department_idの直前のANDは自動で除去されるため出力されません。
+				</p>
+<div class="source"><pre>select 
+  * 
+from
+  employee 
+where 
+  department_id = ?</pre>
+</div>
+<p>
+					employeeId == null &amp;&amp; department_id == null が成立するとき、実際は次のSQLに変換されます。
+					department_idの直前のANDは自動で除去されるため出力されません。
+				</p>
+<div class="source"><pre>select 
+  * 
+from
+  employee 
+where 
+  department_id is null</pre>
+</div>
+<p>
+					過去との互換性のため、<code>/*%if 条件式*/</code> と <code>/*%end*/</code> の間では、
+					行コメントを使用した次の構文も使用できます。
+					特に理由がない限り、ブロックコメントの /*%elseif 条件式*/ や /*%else*/ を使用してください。 
+				</p>
+<div class="source"><pre>--elseif 条件式--</pre>
+</div>
+<div class="source"><pre>--else</pre>
+</div>
+<p>
+					elseifやelseを行コメントで表した場合の例を示します。
+				</p>
+<div class="source"><pre>select 
+  * 
+from
+  employee 
+where 
+/*%if employeeId != null */
+  employee_id = /* employeeId */9999
+--elseif department_id != null -- department_id = /* departmentId */99
+--else department_id is null
+/*%end */</pre>
+</div>
+<h4><a name="ネストした条件コメント"></a>ネストした条件コメント</h4>
+<p>
+					条件コメントはネストさせることができます。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeId != null */
+  employee_id = /* employeeId */99
+  /*%if employeeName != null */ 
+    and
+    employee_name = /* employeeName */'hoge'
+  /*%else*/
+    and
+    employee_name is null
+  /*%end*/
+/*%end*/</pre>
+</div>
+<h4><a name="条件コメントにおける制約"></a>条件コメントにおける制約</h4>
+<p>
+					条件コメントのifとendはSQLの同じ節に含まれなければいけません。
+					節とは、SELECT節、FROM節、WHERE節、GROUP BY節、HAVING節、ORDER BY節などです。
+					次の例では、ifがFROM節にありendがWHERE節にあるため不正です。
+				</p>
+<div class="source"><pre>select * from employee /*%if employeeId != null */ 
+where employee_id = /* employeeId */99 /*%end*/</pre>
+</div>
+<p>
+					また、ifとendは同じレベルの文に含まれなければいけません。
+					次の例では、ifが括弧の外にありendが括弧の内側にあるので不正です。
+				</p>
+<div class="source"><pre>select * from employee
+where employee_id in /*%if departmentId != null */(...  /*%end*/ ...)</pre>
+</div>
+</div>
+<div class="section"><h3><a name="繰り返しコメント"></a>繰り返しコメント</h3>
+<h4><a name="forとend"></a>forとend</h4>
+<p>
+					繰り返しを示す式コメントを繰り返しコメントと呼びます。
+					構文は、次のとおりです。
+<div class="source"><pre>/*%for 識別子 : 式*/ ～ /*%end*/</pre>
+</div>
+
+					識別子は、繰り返される要素を指す変数です。
+					式は、java.lang.Iterable型として評価される式でなければいけません。
+				</p>
+<p>
+					例を示します。
+				</p>
+<div class="source"><pre>select * from employee where
+/*%for name : names */
+employee_name like /* name */'hoge'
+  /*%if name_has_next */
+/*# &quot;or&quot; */
+  /*%end */
+/*%end*/
+</pre>
+</div>
+<p>
+					上記のSQL文は、<code>names</code>が3つの要素からなるリストを表す場合、次のような準備された文に変換されます。
+				</p>
+<div class="source"><pre>select * from employee where
+employee_name like ? 
+or
+employee_name like ?
+or
+employee_name like ?</pre>
+</div>
+<h4><a name="item_has_nextとitem_index"></a>item_has_nextとitem_index</h4>
+<p><code>/*%for 識別子 : 式*/</code> から <code>/*%end*/</code> までの内側では、次の2つの特別な変数を使用できます。
+				</p>
+<ul><li><i>item</i>_has_next</li>
+<li><i>item</i>_index</li>
+</ul>
+<p>
+					itemは識別子です。つまり、forの識別子が「name」の場合、この変数はそれぞれ「name_has_next」と「name_index」となります。
+				</p>
+<p><i>item</i>_has_nextは、次の繰り返し要素が存在するかどうかを示すbooleanの値です。
+				</p>
+<p><i>item</i>_indexは、繰り返しのindexを表すintの値です。値は0始まりです。
+				</p>
+<h4><a name="繰り返しコメントにおけるWHEREやHAVINGの自動除去"></a>繰り返しコメントにおけるWHEREやHAVINGの自動除去</h4>
+<p>
+					繰り返しコメントを使用した場合、コメントの前にあるWHEREやHAVINGについて、自動で出力の要/不要を判定します。
+					たとえば、次のようなSQLで<code>names</code>のsizeが0の場合（繰り返しが行われない場合）、
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%for name : names */
+employee_name like /* name */'hoge'
+  /*%if name_has_next */
+/*# &quot;or&quot; */
+  /*%end */
+/*%end*/</pre>
+</div>
+<p><code>/*%for ～*/</code>の前の <code>where</code>は自動で除去され、次のSQLが生成されます。
+				</p>
+<div class="source"><pre>select * from employee</pre>
+</div>
+<h4><a name="繰り返しコメントにおけるANDやORの自動除去"></a>繰り返しコメントにおけるANDやORの自動除去</h4>
+<p>
+					繰り返しコメントを使用した場合、コメントの後ろにつづくANDやORについて、自動で出力の要/不要を判定します。
+					たとえば、次のようなSQLで<code>names</code>のsizeが0の場合（繰り返しが行われない場合）、
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%for name : names */
+employee_name like /* name */'hoge'
+  /*%if name_has_next */
+/*# &quot;or&quot; */
+  /*%end */
+/*%end*/
+or
+salary &gt; 1000</pre>
+</div>
+<p><code>/*%end*/</code>の後ろの <code>or</code> は自動で除去され、次のSQLが生成されます。
+				</p>
+<div class="source"><pre>select * from employee where salary &gt; 1000</pre>
+</div>
+<h4><a name="繰り返しコメントにおける制約"></a>繰り返しコメントにおける制約</h4>
+<p>
+					繰り返しコメントのforとendはSQLの同じ節に含まれなければいけません。
+					節とは、SELECT節、FROM節、WHERE節、GROUP BY節、HAVING節、ORDER BY節などです。
+				</p>
+<p>
+					また、forとendは同じレベルの文に含まれなければいけません。
+					つまり、括弧の外でfor、括弧の内側でendという記述は認められません。
+				</p>
+</div>
+<div class="section"><h3><a name="通常のブロックコメント"></a>通常のブロックコメント</h3>
+<p><code>/*</code>の直後に続く3文字目が、Javaの識別子の先頭で使用できない文字（ただし、空白と式で特別な意味をもつ「<code>%</code>」、「<code>#</code>」、「<code>@</code>」、「<code>&quot;</code>」、「<code>'</code>」は除く）の場合、それは通常のブロックコメントだとみなされます。
+				</p>
+<p>
+					たとえば、次の例はすべて通常のブロックコメントとみなされます。
+				</p>
+<div class="source"><pre>/**～*/
+/*+～*/
+/*=～*/
+/*:～*/
+/*;～*/
+/*(～*/
+/*)～*/
+/*&amp;～*/</pre>
+</div>
+<p>
+					一方、次の例はすべて式コメントだとみなされます。
+				</p>
+<div class="source"><pre>/* ～*/ ...--3文字目が空白であるため式コメントです。
+/*a～*/ ...--3文字目がJavaの識別子の先頭で使用可能な文字であるため式コメントです。
+/*$～*/ ...--3文字目がJavaの識別子の先頭で使用可能な文字であるため式コメントです。
+/*%～*/ ...--3文字目が条件コメントや繰り返しコメントの始まりを表す「<code>%</code>」であるため式コメントです。
+/*#～*/ ...--3文字目が埋め込み変数コメントを表す「<code>#</code>」であるため式コメントです。
+/*@～*/ ...--3文字目が組み込み関数もしくはクラス名を表す「<code>@</code>」であるため式コメントです。
+/*&quot;～*/ ...--3文字目が文字列リテラルの引用符を表す「<code>&quot;</code>」であるため式コメントです。
+/*'～*/ ...--3文字目が文字リテラルの引用符を表す「<code>'</code>」であるため式コメントです。</pre>
+</div>
+<p>
+					特に理由がない場合、通常のブロックコメントには<code>/**～*/</code>を使用するのがよいでしょう。
+				</p>
+</div>
+<div class="section"><h3><a name="通常の行コメント"></a>通常の行コメント</h3>
+<p><code>--</code>の直後に、<code>elseif</code>や<code>else</code>がつづかない場合、それは通常の行コメントだとみなされます。
+				</p>
+<p>
+					たとえば、次の例は通常の行コメントだとみなされます。
+				</p>
+<div class="source"><pre>-- aaa</pre>
+</div>
+<div class="source"><pre>---aaa</pre>
+</div>
+<p>
+					一方、次の例はすべて式コメントだとみなされます。
+				</p>
+<div class="source"><pre>--elseif ～ --
+--else</pre>
+</div>
+<p>
+					特に理由がない場合、通常の行コメントは使用しないか、<code>---</code>を使用するのがいいでしょう。
+				</p>
+</div>
+</div>
+<div class="section"><h2><a name="式言語"></a>式言語</h2>
+<p>
+				式コメントには式を記述できます。
+				文法は、Javaとほとんど同じです。
+				ただし、Javaで可能なことすべてができるわけではありません。
+			</p>
+<div class="section"><h3><a name="リテラル"></a>リテラル</h3>
+<p>
+					以下のリテラルが用意されています。
+				</p>
+<table class="bodyTable"><tr class="b"><th>リテラル</th>
+<th>型</th>
+</tr>
+<tr class="a"><td><code>null</code></td>
+<td>void</td>
+</tr>
+<tr class="b"><td><code>true</code></td>
+<td>boolean</td>
+</tr>
+<tr class="a"><td><code>false</code></td>
+<td>boolean</td>
+</tr>
+<tr class="b"><td><code>10</code></td>
+<td>int</td>
+</tr>
+<tr class="a"><td><code>10L</code></td>
+<td>long</td>
+</tr>
+<tr class="b"><td><code>0.123F</code></td>
+<td>float</td>
+</tr>
+<tr class="a"><td><code>0.123D</code></td>
+<td>double</td>
+</tr>
+<tr class="b"><td><code>0.123B</code></td>
+<td>java.math.BigDecimal</td>
+</tr>
+<tr class="a"><td><code>'a'</code></td>
+<td>char</td>
+</tr>
+<tr class="b"><td><code>&quot;a&quot;</code></td>
+<td>String</td>
+</tr>
+</table>
+<p>
+					数値の型は、リテラルの最後に「L」や「F」などを付与して区別します。
+					「L」や「F」などは大文字でなければいけません。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeName != null &amp;&amp; employeeName.length() &gt; 10 */
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+</div>
+<div class="section"><h3><a name="比較演算子"></a>比較演算子</h3>
+<p>
+					以下の比較演算子を使用できます。
+				</p>
+<table class="bodyTable"><tr class="a"><th>演算子</th>
+<th>説明</th>
+</tr>
+<tr class="b"><td><code>==</code></td>
+<td>等値演算子</td>
+</tr>
+<tr class="a"><td><code>!=</code></td>
+<td>不等演算子</td>
+</tr>
+<tr class="b"><td><code>&lt;</code></td>
+<td>小なり演算子</td>
+</tr>
+<tr class="a"><td><code>&lt;=</code></td>
+<td>小なりイコール演算子</td>
+</tr>
+<tr class="b"><td><code>&gt;</code></td>
+<td>大なり演算子</td>
+</tr>
+<tr class="a"><td><code>&gt;=</code></td>
+<td>大なりイコール演算子</td>
+</tr>
+</table>
+<p>
+					比較演算子を利用するには、 被演算子が <code>java.lang.Comparable</code>を実装している必要があります。
+				</p>
+<p><code>&lt;</code>、<code>&lt;=</code>、<code>&gt;</code>、<code>&gt;=</code>では、
+					被演算子が<code>null</code>であってはいけません。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeName.indexOf(&quot;s&quot;) &gt; -1 */
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+</div>
+<div class="section"><h3><a name="論理演算子"></a>論理演算子</h3>
+<p>
+					以下の論理演算子を使用できます。
+				</p>
+<table class="bodyTable"><tr class="b"><th>演算子</th>
+<th>説明</th>
+</tr>
+<tr class="a"><td><code>!</code></td>
+<td>論理否定演算子</td>
+</tr>
+<tr class="b"><td><code>&amp;&amp;</code></td>
+<td>論理積演算子</td>
+</tr>
+<tr class="a"><td><code>||</code></td>
+<td>論理和演算子</td>
+</tr>
+</table>
+<p>
+					 括弧を使って、演算子が適用される優先度を制御できます。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if (departmentId == null || managerId == null) and employee_name != null */
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+</div>
+<div class="section"><h3><a name="算術演算子"></a>算術演算子</h3>
+<p>
+					以下の算術演算子を使用できます。
+				</p>
+<table class="bodyTable"><tr class="b"><th>演算子</th>
+<th>説明</th>
+</tr>
+<tr class="a"><td><code>+</code></td>
+<td>加算演算子</td>
+</tr>
+<tr class="b"><td><code>-</code></td>
+<td>減算演算子</td>
+</tr>
+<tr class="a"><td><code>*</code></td>
+<td>乗算演算子</td>
+</tr>
+<tr class="b"><td><code>/</code></td>
+<td>除算演算子</td>
+</tr>
+<tr class="a"><td><code>%</code></td>
+<td>剰余演算子</td>
+</tr>
+</table>
+<p>
+					 被演算子は数値型でなければいけません。
+				</p>
+<div class="source"><pre>select * from employee where 
+    salary = /* salary + 1000 */0</pre>
+</div>
+</div>
+<div class="section"><h3><a name="その他の演算子"></a>その他の演算子</h3>
+<p>
+					連結演算子（<code>+</code>）を使って文字を連結できます。
+				</p>
+<p>
+					 被演算子は次のいずれかの型でなければいけません。
+				</p>
+<ul><li>java.lang.String</li>
+<li>java.lang.Character</li>
+<li>char</li>
+</ul>
+<div class="source"><pre>select * from employee where 
+   employee_name like /* employeeName + &quot;_&quot; */'smith'</pre>
+</div>
+</div>
+<div class="section"><h3><a name="インスタンスメソッドの呼び出し"></a>インスタンスメソッドの呼び出し</h3>
+<p>
+					ドット（.）で区切ってメソッド名を指定することでインスタンスメソッドを実行可能です。
+					実行可能なメソッドは、可視性が<code>public</code>なものだけに限られます。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeName.startsWith(&quot;s&quot;) */
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+<p>
+					引数がない場合は、メソッド名の後ろに()を指定します。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeName.length() &gt; 10 */ 
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+</div>
+<div class="section"><h3><a name="インスタンスフィールドへのアクセス"></a>インスタンスフィールドへのアクセス</h3>
+<p>
+					ドット（.）で区切ってフィールド名を指定することでインスタンスフィールドにアクセスできます。
+					可視性はprivateであってもアクセス可能です。
+				</p>
+<div class="source"><pre>select * from employee where 
+    employee_name = /* employee.employeeName */'smith'</pre>
+</div>
+</div>
+<div class="section"><h3><a name="staticメソッドの呼び出し"></a>staticメソッドの呼び出し</h3>
+<p><code>@</code>で囲まれたクラスの完全修飾名にメソッドを続けることでstaticメソッドを実行可能です。
+					実行可能なメソッドは、可視性が<code>public</code>なものだけに限られます。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if @java.util.regex.Pattern@matches(&quot;^[a-z]*$&quot;, employeeName) */
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+</div>
+<div class="section"><h3><a name="staticフィールドへのアクセス"></a>staticフィールドへのアクセス</h3>
+<p><code>@</code>で囲まれたクラスの完全修飾名にフィールドを続けることでstaticフィールドにアクセスできます。
+					可視性はprivateであってもアクセス可能です。
+				</p>
+<div class="source"><pre>select * from employee where 
+/*%if employeeName.length() &lt; @java.lang.Byte@MAX_VALUE */
+    employee_name = /* employeeName */'smith'
+/*%end*/</pre>
+</div>
+</div>
+<div class="section"><h3><a name="組み込み関数の使用"></a>組み込み関数の使用</h3>
+<p>
+					組み込み関数は、主に、SQLにバインドする前にバインド変数の値を変更するためのユーティリティです。
+				</p>
+<p>
+					たとえば、likeで前方一致検索を行う場合に、次のように記述できます。
+				</p>
+<div class="source"><pre>select * from employee where 
+    employee_name like /* @prefix(employee.employeeName) */'smith' escape '$'</pre>
+</div>
+<p>
+					ここでは、<code>@prefix(employee.employeeName)</code> というように、
+					<code>employee.employeeName</code> を <code>@prefix</code>関数に渡しています。
+					<code>@prefix</code>関数は、パラメータで受け取る文字列を前方一致検索用の文字列に変換します。また、特別な意味を持つ文字をエスケープします。
+					この例では、<code>employee.employeeName</code> の値が「ABC」である場合、
+					値は「ABC%」に変換されます。
+					もし、<code>employee.employeeName</code> の値が「AB%C」というように「%」を含んでいる場合、
+					「%」はデフォルトのエスケープシーケンス（$）でエスケープされ、値は「AB$%C%」に変換されます。
+				</p>
+<p>
+					使用可能な関数は以下のとおりです。
+				</p>
+<table class="bodyTable"><tr class="b"><th>戻り値の型</th>
+<th>関数名とパラメータ</th>
+<th>概要</th>
+</tr>
+<tr class="a"><td><code>String</code></td>
+<td><code>@escape(String text)</code></td>
+<td>LIKE演算のためのエスケープを行うことを示します。戻り値は入力値をエスケープした文字列です。エスケープにはデフォルトのエスケープ文字（$）を用いて行われます。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>String</code></td>
+<td><code>@escape(String text, char escapeChar)</code></td>
+<td>LIKE演算のためのエスケープを行うことを示します。戻り値は入力値をエスケープした文字列です。エスケープは第2引数で指定したエスケープ文字を用いて行われます。最初の引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>String</code></td>
+<td><code>@prefix(String prefix)</code></td>
+<td>前方一致検索を行うことを示します。戻り値は入力値をエスケープしワイルドカードを後ろに付与した文字列です。エスケープにはデフォルトのエスケープ文字（$）を用いて行われます。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>String</code></td>
+<td><code>@prefix(String prefix, char escapeChar)</code></td>
+<td>前方一致検索を行うことを示します。戻り値は入力値をエスケープしワイルドカードを後ろに付与した文字列です。エスケープは第2引数で指定したエスケープ文字を用いて行われます。最初の引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>String</code></td>
+<td><code>@suffix(String suffix)</code></td>
+<td>後方一致検索を行うことを示します。戻り値は入力値をエスケープしワイルドカードを前に付与した文字列です。エスケープはデフォルトのエスケープ文字（$）を用いて行われます。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>String</code></td>
+<td><code>@suffix(String suffix, char escapeChar)</code></td>
+<td>後方一致検索を行うことを示します。戻り値は入力値をエスケープしワイルドカードを前に付与した文字列です。エスケープは第2引数で指定したエスケープ文字を用いて行われます。最初の引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>String</code></td>
+<td><code>@infix(String infix)</code></td>
+<td>中間一致検索を行うことを示します。戻り値は入力値をエスケープしワイルドカードを前と後ろに付与した文字列です。エスケープはデフォルトのエスケープ文字（$）を用いて行われます。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>String</code></td>
+<td><code>@infix(String infix, char escapeChar)</code></td>
+<td>中間一致検索を行うことを示します。戻り値は入力値をエスケープしワイルドカードを前と後ろに付与した文字列です。エスケープは第2引数で指定したエスケープ文字を用いて行われます。最初の引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>String</code></td>
+<td><code>@contain(String inside)</code></td>
+<td><code>@infix(String infix)</code>の別名です。非推奨です。</td>
+</tr>
+<tr class="b"><td><code>String</code></td>
+<td><code>@contain(String inside, char escapeChar)</code></td>
+<td><code>@infix(String infix, char escapeChar)</code>の別名です。非推奨です。</td>
+</tr>
+<tr class="a"><td><code>java.util.Date</code></td>
+<td><code>@roundDownTimePart(java.util.Date date)</code></td>
+<td>時刻部分を切り捨てることを示します。戻り値は時刻部分が切り捨てられた新しい日付です。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>java.sql.Date</code></td>
+<td><code>@roundDownTimePart(java.sql.Date date)</code></td>
+<td>時刻部分を切り捨てることを示します。戻り値は時刻部分が切り捨てられた新しい日付です。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>java.sql.Timestamp</code></td>
+<td><code>@roundDownTimePart(java.sql.Timestamp timestamp)</code></td>
+<td>時刻部分を切り捨てることを示します。戻り値は時刻部分が切り捨てられた新しいタイムスタンプです。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>java.util.Date</code></td>
+<td><code>@roundUpTimePart(java.util.Date date)</code></td>
+<td>時刻部分を切り上げることを示します。戻り値は時刻部分が切り上げられた新しい日付です。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>java.sql.Date</code></td>
+<td><code>@roundUpTimePart(java.sql.Date date)</code></td>
+<td>時刻部分を切り上げることを示します。戻り値は時刻部分が切り上げられた新しい日付です。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>java.sql.Timestamp</code></td>
+<td><code>@roundUpTimePart(java.sql.Timestamp timestamp)</code></td>
+<td>時刻部分を切り上げることを示します。戻り値は時刻部分が切り上げられた新しいタイムスタンプです。引数に<code>null</code>を渡した場合、<code>null</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>boolean</code></td>
+<td><code>@isEmpty(CharSequence charSequence)</code></td>
+<td>文字シーケンスが<code>null</code>、もしくは文字シーケンスの長さが<code>0</code>の場合 <code>true</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>boolean</code></td>
+<td><code>@isNotEmpty(CharSequence charSequence)</code></td>
+<td>文字シーケンスが<code>null</code>でない、かつ文字シーケンスの長さが<code>0</code>でない場合 <code>true</code>を返します。</td>
+</tr>
+<tr class="a"><td><code>boolean</code></td>
+<td><code>@isBlank(CharSequence charSequence)</code></td>
+<td>文字シーケンスが<code>null</code>、もしくは文字シーケンスの長さが<code>0</code>、もしくは文字シーケンスが空白だけから形成される場合 <code>true</code>を返します。</td>
+</tr>
+<tr class="b"><td><code>boolean</code></td>
+<td><code>@isNotBlank(CharSequence charSequence)</code></td>
+<td>文字シーケンスが<code>null</code>でない、かつ文字シーケンスの長さが<code>0</code>でない、かつ文字シーケンスが空白だけで形成されない場合 <code>true</code>を返します。</td>
+</tr>
+</table>
+<p>
+					これらの関数は、<a href="../apidocs/org/seasar/doma/expr/ExpressionFunctions.html"><code>org.seasar.doma.expr.ExpressionFunctions</code></a>のメソッドに対応しています。
+				</p>
+</div>
+<div class="section"><h3><a name="カスタム関数の使用"></a>カスタム関数の使用</h3>
+<p>
+					関数を独自に定義し使用できます。
+				</p>
+<p>
+					独自に定義した関数（カスタム関数）を使用するには次の設定が必要です。
+				</p>
+<ul><li>
+						関数は、<a href="../apidocs/org/seasar/doma/expr/ExpressionFunctions.html"><code>org.seasar.doma.expr.ExpressionFunctions</code></a>を実装したクラスのメソッドとして定義する。
+						メソッドは、publicなインスタンスメソッドでなければいけない。
+					</li>
+<li>
+						作成したクラスは、<a href="apt.html#オプション">注釈処理のオプション</a>で登録する。
+						オプションのキーはexpr.functionsである。
+					</li>
+<li>
+						作成したクラスのインスタンスを<a href="config.html">設定クラス</a>のRDBMSの方言で使用する
+						（Domaが提供するRDBMSの方言の実装はコンストラクタで<code>org.seasar.doma.expr.ExpressionFunctions</code>を受け取ることが可能）。
+					</li>
+</ul>
+<p>
+					カスタム関数を呼び出すには、組み込み関数と同じように関数名の先頭に@をつけます。
+					たとえば、myfuncという関数の呼び出しは、次のように記述できます。
+				</p>
+<div class="source"><pre>select * from employee where 
+    employee_name = /* @myfunc(employee.employeeName) */'smith'</pre>
+</div>
+</div>
+</div>
+
+</div><!-- article -->
+
+</div><!-- contents_center -->
+
+<div id="footer">
+<address>  &copy; Copyright 
+                    <a href="http://www.seasarfoundation.org/">The Seasar Foundation</a>.
+            and the others
+    
+              2009-2014,
+        all rights reserved.
+  <a href="http://www.seasar.org">The Seasar Project</a>.
+</address>
+<div class="line"><span class="hide">spacer</span></div>
+</div><!-- footer -->
+
+</div><!-- wrapper -->
+
+</body>
+</html>

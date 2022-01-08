@@ -1,0 +1,24 @@
+-classpath
+'C:/Dev/doma1/doma/target/classes'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Dev/doma1/doma/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2009-2014 <a href="http://www.seasarfoundation.org/">The Seasar Foundation</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Dev/doma1/doma/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Doma 1.38.0 API'
+-link
+'http://docs.oracle.com/javase/6/docs/api'
+-use
+-version
+-windowtitle
+'Doma 1.38.0 API'

@@ -1,0 +1,584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Language" content="ja" /> 
+<meta http-equiv="Content-Style-Type" content="text/css" /> 
+<title>Doma - GenTestタスク</title>
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/main.css" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/print.css" media="print" />
+<link href="../css/maven-base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/maven-theme.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+
+<div id="wrapper">
+
+<div id="header">
+
+<div class="line"><span class="hide">spacer</span></div>
+
+<div id="logo"><h1 id="h01" class="hide">The Seasar Project</h1><a href="http://www.seasar.org/" alt="The Seasar Project" title="The Seasar Project"><img src="http://www.seasar.org/images/seasar_logo_blue.gif" alt="The Seasar Project" width="390" height="180" /></a></div>
+
+<div id="tool">
+
+<h2><a href="http://search.seasar.org/">Site Search</a></h2>
+
+<form id="search" action="http://search.seasar.org/">
+<div>
+	<input id="search_phrase" type="text" name="phrase" size="20" />
+	<input type="hidden" name="perpage" value="30" />
+	<input type="hidden" name="enc" value="UTF-8" />
+	<input id="search_go" type="submit" value="Search" />
+</div>
+</form>
+
+<h2>Seasar Banner</h2>
+            <a href="http://www.seasar.org/" id="bannerLeft">
+    
+                                    <img src="http://www.seasar.org/images/seasar_banner.gif" alt="" />
+    
+            </a>
+      
+</div>
+
+<div id="navi">
+	<p id="navi_left">  
+          <a href="http://www.seasar.org/">Seasar</a>
+              &gt;
+      
+          <a href="../index.html">Doma</a>
+          </p>
+	<p id="navi_right"><a href="../../en/">English</a> | <a href="../../ja/">Japanese</a></p>
+</div>
+
+</div><!-- header -->
+
+<div id="contents_left">
+           
+  
+
+  
+    
+  
+  
+                   <h2>About</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../index.html">ホーム</a>
+        </li>
+              
+    <li class="none">
+              <a href="../overview.html">概要</a>
+        </li>
+              
+    <li class="none">
+              <a href="../downloads.html">ダウンロード</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA">課題追跡</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">変更履歴</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://ml.seasar.org/mailman/listinfo/seasar-user">メーリングリスト</a>
+        </li>
+              
+    <li class="none">
+              <a href="../faq.html">よくある質問</a>
+        </li>
+          </ul>
+          <h2>ドキュメント</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../setup.html">セットアップ</a>
+        </li>
+              
+    <li class="none">
+              <a href="../quick_start.html">クイックスタート</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../tutorial/index.html">チュートリアル</a>
+              </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+                  
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../reference/index.html">リファレンス</a>
+              </li>
+              
+    <li class="none">
+              <a href="../jpetstore.html">デモアプリ - Doma JPetStore</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+            
+                    
+            <li class="expanded">
+              <a href="../extension/index.html">開発支援ツール</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="../extension/doma_tools.html">Doma Tools</a>
+        </li>
+                  
+                
+              
+      
+            
+            
+              
+            <li class="expanded">
+              <a href="../extension/doma_gen.html">Doma-Gen</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="../extension/doma_gen_gen_task.html">Gen</a>
+        </li>
+                  
+    <li class="none">
+              <strong>GenTest</strong>
+        </li>
+              </ul>
+        </li>
+              </ul>
+        </li>
+              
+    <li class="none">
+              <a href="http://www.seasar.org/wiki/index.php?DomaUpdateOperationLog">移行ガイド</a>
+        </li>
+          </ul>
+          <h2>Javadocs</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../apidocs/index.html">Doma</a>
+        </li>
+              
+    <li class="none">
+              <a href="../extension/doma-gen/apidocs/index.html">Doma-Gen</a>
+        </li>
+          </ul>
+          <h2>プロジェクト文書</h2>
+        <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../project-info.html">プロジェクト情報</a>
+              </li>
+          </ul>
+                                       <a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy" name="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png" />
+          </a>
+                       
+  
+
+  
+    
+  
+  
+  </div><!-- contents_left -->
+
+<div id="contents_center">
+
+<div id="article">
+<div class="section"><h2><a name="目次"></a>目次</h2>
+<ul><li><a href="#概要">概要</a></li>
+<li><a href="#パラメータ">パラメータ</a><ul><li><a href="#トップレベルパラメータ">トップレベルパラメータ</a></li>
+<li><a href="#ネストした要素として指定されるパラメータ">ネストした要素として指定されるパラメータ</a><ul><li><a href="#SqlTestConfig">SqlTestConfig</a></li>
+<li><a href="#SqlTestConfigにネストした要素として指定されるパラメータ">SqlTestConfigにネストした要素として指定されるパラメータ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#使用例">使用例</a><ul><li><a href="#独自のテンプレートファイルを使用する">独自のテンプレートファイルを使用する</a></li>
+<li><a href="#生成するJavaファイルに共通のヘッダーとしてコピーライトを含める">生成するJavaファイルに共通のヘッダーとしてコピーライトを含める</a></li>
+<li><a href="#生成するJavaファイルにauthorを指定する">生成するJavaファイルにauthorを指定する</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section"><h2><a name="概要"></a>概要</h2>
+<p>
+				GenTestタスクは、テストクラスのコードを生成します。
+				現在のバージョンでは、SQLファイルに書かれたSQLを実行してSQLが正しいことを確認するテストコードを生成します。
+			</p>
+<p>
+				GenTestタスクを利用するには、次のようにtaskdefタグとtypedefタグを使ってタスクとデータ型を定義する必要があります。
+			</p>
+<div class="source"><pre>&lt;taskdef name=&quot;gen&quot; classname=&quot;org.seasar.doma.extension.gen.task.Gen&quot; classpathref=&quot;classpath&quot; loaderref=&quot;loader&quot;/&gt;
+&lt;typedef name=&quot;sqlTestConfig&quot; classname=&quot;org.seasar.doma.extension.gen.task.SqlTestConfig&quot; loaderref=&quot;loader&quot;/&gt;
+</pre>
+</div>
+<p>
+				taskdefのclasspathref属性には、Doma-Gen、FreeMarkerのjarファイルが参照されるように設定してください（Doma本体のjarファイルは不要です）。
+			</p>
+<p>
+				定義したタスクとデータ型は次のように使用します。
+			</p>
+<div class="source"><pre>&lt;target name=&quot;genTest&quot;&gt;
+    &lt;genTest
+        dialectName=&quot;${dialectName}&quot;
+        driverClassName=&quot;${driverClassName}&quot;
+        url=&quot;${url}&quot;
+        user=&quot;${user}&quot;
+        password=&quot;${password}&quot;&gt;
+        &lt;sqlTestConfig
+            destdir=&quot;${javaDestDir}&quot;
+            testClassName=&quot;${sqlTestClassName}&quot;&gt;
+            &lt;fileset dir=&quot;${sqlDestDir}&quot;&gt;
+                &lt;include name=&quot;${sqlFilePattern}&quot;/&gt;
+            &lt;/fileset&gt;
+        &lt;/sqlTestConfig&gt;
+    &lt;/genTest&gt;
+&lt;/target&gt;</pre>
+</div>
+<p>
+				生成されるJavaコードは次のようになります。
+			</p>
+<div class="source"><pre>public class SqlTest extends TestCase {
+    ...
+    public void test0() throws Exception {
+        SqlFile sqlFile = repository.getSqlFile(&quot;META-INF/example/dao/AddressDao/selectById.sql&quot;, dialect);
+        execute(sqlFile);
+    }
+
+    public void test1() throws Exception {
+        SqlFile sqlFile = repository.getSqlFile(&quot;META-INF/example/dao/AddressDao/selectByIdAndVersion.sql&quot;, dialect);
+        execute(sqlFile);
+    }
+
+    public void test2() throws Exception {
+        SqlFile sqlFile = repository.getSqlFile(&quot;META-INF/example/dao/CategoryDao/selectById.sql&quot;, dialect);
+        execute(sqlFile);
+    }
+    ...
+}</pre>
+</div>
+<p>
+				対象とするSQLファイルの数だけテストメソッドが生成されます。
+			</p>
+</div>
+<div class="section"><h2><a name="パラメータ"></a>パラメータ</h2>
+<div class="section"><h3><a name="トップレベルパラメータ"></a>トップレベルパラメータ</h3>
+<p>
+					トップレベルパラメータの定義は次の通りです。
+				</p>
+<table class="bodyTable"><tr class="a"><th>属性</th>
+<th>説明</th>
+<th>デフォルト値</th>
+<th>必須</th>
+</tr>
+<tr class="b"><td>dialectName</td>
+<td>接続するRDBMSの方言名です。次のうちのどれかを指定できます。&quot;h2&quot;、&quot;hsqldb&quot;、&quot;mysql&quot;、&quot;postgres&quot;、&quot;oracle&quot;、&quot;db2&quot;、&quot;mssql2008&quot;、&quot;mssql&quot;。この名前に対応するクラスは、GenTestタスクを実行するクラスパスに通されている必要があります。</td>
+<td>-</td>
+<td><b>dialectClassNameが指定されていない場合YES</b></td>
+</tr>
+<tr class="a"><td>dialectClassName</td>
+<td>接続するRDBMSの方言クラス名です。<code>org.seasar.doma.jdbc.dialect.Dialect</code>の実装クラスでなければいけません。dialectNameの指定により利用できる組み込みの方言クラス以外を利用する場合に指定します。指定するクラスは、GenTestタスクを実行するクラスパスに通されている必要があります。</td>
+<td>-</td>
+<td><b>dialectNameが指定されていない場合YES</b></td>
+</tr>
+<tr class="b"><td>driverClassName</td>
+<td>JDBCドライバクラス名です。<code>java.sql.Driver</code>の実装クラスでなければいけません。</td>
+<td>-</td>
+<td><b><b>YES</b></b></td>
+</tr>
+<tr class="a"><td>url</td>
+<td>JDBC接続URLです。</td>
+<td>-</td>
+<td><b>YES</b></td>
+</tr>
+<tr class="b"><td>user</td>
+<td>JDBC接続ユーザーです。</td>
+<td>-</td>
+<td><b>YES</b></td>
+</tr>
+<tr class="a"><td>password</td>
+<td>JDBC接続パスワードです。</td>
+<td>-</td>
+<td><b>YES</b></td>
+</tr>
+<tr class="b"><td>templateEncoding</td>
+<td>テンプレートファイルのエンコーディングです。</td>
+<td>&quot;UTF-8&quot;</td>
+<td>NO</td>
+</tr>
+<tr class="a"><td>templatePrimaryDir</td>
+<td>テンプレートファイルを検索する際の優先ディレクトリです。独自テンプレートファイルを使用する場合に指定します。</td>
+<td>-</td>
+<td>NO</td>
+</tr>
+<tr class="b"><td>globalFactoryClassName</td>
+<td>このタスクで使用されるインスタンスを生成するファクトリの完全修飾名です。<code>org.seasar.doma.extension.gen.GlobalFactory</code>の実装クラスでなければいけません。このタスクの振る舞いをカスタマイズする場合に指定します。</td>
+<td>&quot;org.seasar.doma.extension.gen.GlobalFactory&quot;</td>
+<td>NO</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="ネストした要素として指定されるパラメータ"></a>ネストした要素として指定されるパラメータ</h3>
+<h4><a name="SqlTestConfig"></a>SqlTestConfig</h4>
+<p>
+					SQLのテストコードの生成に関する設定を表すデータ型です。
+				</p>
+<p>
+					このデータ型を使用するとSQLのテストを行うJavaコードを生成できます。
+					生成されるテストコードは、JUnitとDomaに依存します。
+					このテストコードでは、SQLファイルに記述されたSQLをそのまま実行することでSQLが正しいことを確認します。
+					SQLの実行により変更されたデータはコミットせず、ロールバックします。
+				</p>
+<p>
+					SqlTestConfigのパラメータ定義は次のとおりです。
+				</p>
+<table class="bodyTable"><tr class="a"><th>属性</th>
+<th>説明</th>
+<th>デフォルト値</th>
+<th>必須</th>
+</tr>
+<tr class="b"><td>generate</td>
+<td>&quot;true&quot;の場合、Javaコードを生成します。</td>
+<td>&quot;true&quot;</td>
+<td>NO</td>
+</tr>
+<tr class="a"><td>destDir</td>
+<td>Javaコードの出力先ディレクトリです。</td>
+<td>&quot;src&quot;</td>
+<td>NO</td>
+</tr>
+<tr class="b"><td>overwrite</td>
+<td>&quot;true&quot;の場合、Javaコードを上書きします。</td>
+<td>&quot;true&quot;</td>
+<td>NO</td>
+</tr>
+<tr class="a"><td>testClassName</td>
+<td>生成するテストクラスの名前です。</td>
+<td>&quot;example.SqlTest&quot;</td>
+<td>NO</td>
+</tr>
+<tr class="b"><td>abstrct</td>
+<td>&quot;true&quot;の場合、テストクラスを抽象クラスとして生成します。継承によってデータベースアクセス処理をカスタマイズしたい場合に&quot;true&quot;を指定してください。この名前は、「abstract」ではなく「abstrct」であることに注意してください。</td>
+<td>&quot;false&quot;</td>
+<td>NO</td>
+</tr>
+</table>
+<h4><a name="SqlTestConfigにネストした要素として指定されるパラメータ"></a>SqlTestConfigにネストした要素として指定されるパラメータ</h4>
+<h5>FileSet</h5>
+<p>
+					テスト対象のSQLファイルを指定するためにFileSetを使用します。
+					SQLファイルは次の条件を満たしていなければいけません。
+				</p>
+<ul><li>拡張子がsqlである。</li>
+<li>META-INFディレクトリ以下に配置される。</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2><a name="使用例"></a>使用例</h2>
+<div class="section"><h3><a name="独自のテンプレートファイルを使用する"></a>独自のテンプレートファイルを使用する</h3>
+<p>
+					Doma-Genのテンプレートは、配布ファイルのresources/templateディレクトリ以下にあります。
+					SQLをテストするクラスのテンプレートはsqlTest.ftlです。
+					これをコピーして、修正を加えるのが良いでしょう。
+					テンプレートの記述方法については<a class="externalLink" href="http://freemarker.org/">FreeMarker</a>のドキュメントを参照してください。
+				</p>
+<p>
+					修正したテンプレートファイルは、ファイル名を変更せずにtemplateFilePrimaryDir属性に指定するディレクトリに配置します。
+					mytemplateディレクトリに配置する場合、templatePrimaryDir属性にmytemplateを指定します。
+				</p>
+<div class="source"><pre>&lt;genTest
+    dialectName=&quot;${dialectName}&quot;
+    driverClassName=&quot;${driverClassName}&quot;
+    url=&quot;${url}&quot;
+    user=&quot;${user}&quot;
+    password=&quot;${password}&quot;
+    templatePrimaryDir=&quot;mytemplate&quot;&gt;
+    &lt;sqlTestConfig
+        ...
+    /&gt;
+&lt;genTest/&gt;</pre>
+</div>
+<p>
+					テンプレートは、特定のデータモデルを参照します。
+					テンプレートとデータモデルクラスの対応付けを以下に示します。
+				</p>
+<table class="bodyTable"><tr class="a"><th>テンプレート</th>
+<th>データモデルクラス</th>
+<th>生成物</th>
+</tr>
+<tr class="b"><td>sqlTest.ftl</td>
+<td><a href="doma-gen/apidocs/org/seasar/doma/extension/gen/SqlTestDesc.html">org.seasar.doma.extension.gen.SqlTestDesc</a></td>
+<td>SQLテストクラスのJavaファイル</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="生成するJavaファイルに共通のヘッダーとしてコピーライトを含める"></a>生成するJavaファイルに共通のヘッダーとしてコピーライトを含める</h3>
+<p>
+					lib.ftlというファイルを作成し、これをtemplatePrimaryDir属性に指定するディレクトリに配置します。
+					lib.ftlには次のようにcopyrightの定義をします。
+<div class="source"><pre>&lt;#assign copyright&gt;
+/*
+ * Copyright 2008-2009 ...
+ * All rights reserved.
+ */
+&lt;/#assign&gt;</pre>
+</div>
+
+					mytemplate/lib.ftlと配置する場合、タスクの定義は次のようになります。
+				</p>
+<div class="source"><pre>&lt;genTest
+    dialectName=&quot;${dialectName}&quot;
+    driverClassName=&quot;${driverClassName}&quot;
+    url=&quot;${url}&quot;
+    user=&quot;${user}&quot;
+    password=&quot;${password}&quot;
+    templatePrimaryDir=&quot;mytemplate&quot;&gt;
+    &lt;sqlTestConfig
+        ...
+    /&gt;
+&lt;genTest/&gt;</pre>
+</div>
+</div>
+<div class="section"><h3><a name="生成するJavaファイルにauthorを指定する"></a>生成するJavaファイルにauthorを指定する</h3>
+<p>
+					lib.ftlというファイルを作成し、これをtemplatePrimaryDir属性に指定するディレクトリに配置します。
+					lib.ftlには次のようにauthorの定義をします。
+<div class="source"><pre>&lt;#assign author=&quot;Nakamura&quot;&gt;</pre>
+</div>
+
+					mytemplate/lib.ftlと配置する場合、タスクの定義は次のようになります。
+				</p>
+<div class="source"><pre>&lt;genTest
+    dialectName=&quot;${dialectName}&quot;
+    driverClassName=&quot;${driverClassName}&quot;
+    url=&quot;${url}&quot;
+    user=&quot;${user}&quot;
+    password=&quot;${password}&quot;
+    templatePrimaryDir=&quot;mytemplate&quot;&gt;
+    &lt;sqlTestConfig
+        ...
+    /&gt;
+&lt;genTest/&gt;</pre>
+</div>
+</div>
+</div>
+
+</div><!-- article -->
+
+</div><!-- contents_center -->
+
+<div id="footer">
+<address>  &copy; Copyright 
+                    <a href="http://www.seasarfoundation.org/">The Seasar Foundation</a>.
+            and the others
+    
+              2009-2014,
+        all rights reserved.
+  <a href="http://www.seasar.org">The Seasar Project</a>.
+</address>
+<div class="line"><span class="hide">spacer</span></div>
+</div><!-- footer -->
+
+</div><!-- wrapper -->
+
+</body>
+</html>

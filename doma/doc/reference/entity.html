@@ -1,0 +1,749 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Language" content="ja" /> 
+<meta http-equiv="Content-Style-Type" content="text/css" /> 
+<title>Doma - エンティティクラス</title>
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/main.css" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/print.css" media="print" />
+<link href="../css/maven-base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/maven-theme.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+
+<div id="wrapper">
+
+<div id="header">
+
+<div class="line"><span class="hide">spacer</span></div>
+
+<div id="logo"><h1 id="h01" class="hide">The Seasar Project</h1><a href="http://www.seasar.org/" alt="The Seasar Project" title="The Seasar Project"><img src="http://www.seasar.org/images/seasar_logo_blue.gif" alt="The Seasar Project" width="390" height="180" /></a></div>
+
+<div id="tool">
+
+<h2><a href="http://search.seasar.org/">Site Search</a></h2>
+
+<form id="search" action="http://search.seasar.org/">
+<div>
+	<input id="search_phrase" type="text" name="phrase" size="20" />
+	<input type="hidden" name="perpage" value="30" />
+	<input type="hidden" name="enc" value="UTF-8" />
+	<input id="search_go" type="submit" value="Search" />
+</div>
+</form>
+
+<h2>Seasar Banner</h2>
+            <a href="http://www.seasar.org/" id="bannerLeft">
+    
+                                    <img src="http://www.seasar.org/images/seasar_banner.gif" alt="" />
+    
+            </a>
+      
+</div>
+
+<div id="navi">
+	<p id="navi_left">  
+          <a href="http://www.seasar.org/">Seasar</a>
+              &gt;
+      
+          <a href="../index.html">Doma</a>
+          </p>
+	<p id="navi_right"><a href="../../en/">English</a> | <a href="../../ja/">Japanese</a></p>
+</div>
+
+</div><!-- header -->
+
+<div id="contents_left">
+           
+  
+
+  
+    
+  
+  
+                   <h2>About</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../index.html">ホーム</a>
+        </li>
+              
+    <li class="none">
+              <a href="../overview.html">概要</a>
+        </li>
+              
+    <li class="none">
+              <a href="../downloads.html">ダウンロード</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA">課題追跡</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">変更履歴</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://ml.seasar.org/mailman/listinfo/seasar-user">メーリングリスト</a>
+        </li>
+              
+    <li class="none">
+              <a href="../faq.html">よくある質問</a>
+        </li>
+          </ul>
+          <h2>ドキュメント</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../setup.html">セットアップ</a>
+        </li>
+              
+    <li class="none">
+              <a href="../quick_start.html">クイックスタート</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../tutorial/index.html">チュートリアル</a>
+              </li>
+              
+                
+              
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+                  
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+              <a href="../reference/index.html">リファレンス</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="../reference/basic.html">基本型</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/domain.html">ドメインクラス</a>
+        </li>
+                  
+    <li class="none">
+              <strong>エンティティクラス</strong>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/dao.html">Daoインタフェース</a>
+        </li>
+                  
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../reference/query/index.html">クエリ</a>
+              </li>
+                  
+    <li class="none">
+              <a href="../reference/config.html">設定クラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/sqlfile.html">SQLファイル</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/transaction.html">トランザクション</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/apt.html">注釈処理</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/app_build.html">アプリケーションのビルド方法</a>
+        </li>
+              </ul>
+        </li>
+              
+    <li class="none">
+              <a href="../jpetstore.html">デモアプリ - Doma JPetStore</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+                    
+        <li class="collapsed">
+              <a href="../extension/index.html">開発支援ツール</a>
+              </li>
+              
+    <li class="none">
+              <a href="http://www.seasar.org/wiki/index.php?DomaUpdateOperationLog">移行ガイド</a>
+        </li>
+          </ul>
+          <h2>Javadocs</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../apidocs/index.html">Doma</a>
+        </li>
+              
+    <li class="none">
+              <a href="../extension/doma-gen/apidocs/index.html">Doma-Gen</a>
+        </li>
+          </ul>
+          <h2>プロジェクト文書</h2>
+        <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../project-info.html">プロジェクト情報</a>
+              </li>
+          </ul>
+                                       <a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy" name="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png" />
+          </a>
+                       
+  
+
+  
+    
+  
+  
+  </div><!-- contents_left -->
+
+<div id="contents_center">
+
+<div id="article">
+<div class="section"><h2><a name="目次"></a>目次</h2>
+<ul><li><a href="#概要">概要</a></li>
+<li><a href="#エンティティ定義">エンティティ定義</a><ul><li><a href="#エンティティリスナー">エンティティリスナー</a></li>
+<li><a href="#ネーミング規約">ネーミング規約</a></li>
+<li><a href="#テーブル">テーブル</a></li>
+<li><a href="#継承">継承</a></li>
+</ul>
+</li>
+<li><a href="#フィールド定義">フィールド定義</a><ul><li><a href="#永続的なフィールド">永続的なフィールド</a><ul><li><a href="#カラム">カラム</a></li>
+<li><a href="#識別子">識別子</a></li>
+<li><a href="#バージョン">バージョン</a></li>
+</ul>
+</li>
+<li><a href="#非永続的なフィールド">非永続的なフィールド</a></li>
+<li><a href="#取得時の状態を管理するフィールド">取得時の状態を管理するフィールド</a></li>
+</ul>
+</li>
+<li><a href="#メソッド定義">メソッド定義</a></li>
+<li><a href="#エンティティの利用方法">エンティティの利用方法</a></li>
+</ul>
+</div>
+<div class="section"><h2><a name="概要"></a>概要</h2>
+<p>
+				Entity（エンティティ）は、データベースのテーブルやクエリの結果セットに対応します。
+			</p>
+<p>
+				このページで説明するアノテーションはすべて<code>org.seasar.doma</code>パッケージに属します。
+			</p>
+</div>
+<div class="section"><h2><a name="エンティティ定義"></a>エンティティ定義</h2>
+<p>
+				エンティティクラスは <a href="../apidocs/org/seasar/doma/Entity.html"><code>@Entity</code></a>が注釈されたクラスとして定義します。
+				クラスはトップレベルのクラスでなければいけません（他のクラスやインタフェースにネストされていてはいけません）。
+				エンティティクラスは 非<code>private</code>なデフォルトコンストラクタ（引数なしのコンストラクタ）を持たなければいけません。
+			</p>
+<div class="source"><pre>@Entity
+public class Employee {
+    ...
+}</pre>
+</div>
+<div class="section"><h3><a name="エンティティリスナー"></a>エンティティリスナー</h3>
+<p>
+					エンティティがデータベースに対し挿入、更新、削除される直前/直後に処理を実行したい場合、
+					<code>listener</code> 要素に <code>org.seasar.doma.jdbc.entity.EntityListener</code>
+					の実装クラスを指定できます。
+				</p>
+<div class="source"><pre>@Entity(listener = EmployeeEntityListener.class)
+public class Employee {
+    ...
+}</pre>
+</div>
+<p><code>listener</code> 要素に何も指定しない場合、エンティティクラスが他のエンティティクラスを継承しているかどうかで採用する設定が変わります。
+				</p>
+<ul><li>継承している場合、親エンティティクラスの設定を引き継ぎます</li>
+<li>継承していない場合、何も行いません（<code>org.seasar.doma.jdbc.entity.NullEntityListener</code> が使用されます）</li>
+</ul>
+<p><code>EntityListener</code>は、<code>preDelete</code>、<code>preInsert</code>、<code>preUpdate</code>、<code>postDelete</code>、<code>postInsert</code>、<code>postUpdate</code>の6つのメソッドをもったインタフェースです。
+				</p>
+<dl><dt>preDelete</dt>
+<dd><code>@Delete</code>、または<code>@BatchDelete</code>が注釈されたDaoメソッドでパラメータにエンティティが含まれる場合、削除処理の直前に呼び出されます。
+						ただし、使用するエンティティクラスにエンティティリスナーが指定されている必要があります。
+					</dd>
+<dt>preInsert</dt>
+<dd><code>@Insert</code>、または<code>@BatchInsert</code>が注釈されたDaoメソッドでパラメータにエンティティが含まれる場合、挿入処理の直前に呼び出されます。
+						ただし、使用するエンティティクラスにエンティティリスナーが指定されている必要があります。
+					</dd>
+<dt>preUpdate</dt>
+<dd><code>@Update</code>、または<code>@BatchUpdate</code>が注釈されたDaoメソッドでパラメータにエンティティが含まれる場合、更新処理の直前に呼び出されます。
+						ただし、使用するエンティティクラスにエンティティリスナーが指定されている必要があります。
+					</dd>
+<dt>postDelete</dt>
+<dd><code>@Delete</code>、または<code>@BatchDelete</code>が注釈されたDaoメソッドでパラメータにエンティティが含まれる場合、削除処理の直後に呼び出されます。
+						ただし、使用するエンティティクラスにエンティティリスナーが指定されている必要があります。
+					</dd>
+<dt>postInsert</dt>
+<dd><code>@Insert</code>、または<code>@BatchInsert</code>が注釈されたDaoメソッドでパラメータにエンティティが含まれる場合、挿入処理の直後に呼び出されます。
+						ただし、使用するエンティティクラスにエンティティリスナーが指定されている必要があります。
+					</dd>
+<dt>postUpdate</dt>
+<dd><code>@Update</code>、または<code>@BatchUpdate</code>が注釈されたDaoメソッドでパラメータにエンティティが含まれる場合、更新処理の直後に呼び出されます。
+						ただし、使用するエンティティクラスにエンティティリスナーが指定されている必要があります。
+					</dd>
+</dl>
+<p><code>EntityListener</code>は次のように実装できます。
+				</p>
+<div class="source"><pre>public class EmployeeEntityListener implements EntityListener&lt;Employee&gt; {
+    @Override
+    public void preDelete(Employee entity, PreDeleteContext&lt;Employee&gt; context) {
+        ...
+    }
+    @Override
+    public void preInsert(Employee entity, PreInsertContext&lt;Employee&gt; context) {
+        ...
+    }
+    @Override
+    public void preUpdate(Employee entity, PreUpdateContext&lt;Employee&gt; context) {
+        ...
+    }
+    @Override
+    public void postDelete(Employee entity, PostDeleteContext&lt;Employee&gt; context) {
+        ...
+    }
+    @Override
+    public void postInsert(Employee entity, PostInsertContext&lt;Employee&gt; context) {
+        ...
+    }
+    @Override
+    public void postUpdate(Employee entity, PostUpdateContext&lt;Employee&gt; context) {
+        ...
+    }
+}</pre>
+</div>
+<p><code>EntityListener</code>の各メソッドの2番目のパラメータは挿入、更新、削除が行われた場合のコンテキスト情報です。
+					このコンテキスト情報には、エンティティのメタクラス、Daoのメソッド、Daoの設定が含まれます。
+					たとえば、Daoのメソッドに独自のアノテーションをつけておくと、そのアノテーションの有無を見て特定のプロパティを更新するといったことが可能です。
+				</p>
+<p><code>EntityListener</code>の実装クラスはpublicなデフォルトコンストラクタ（引数なしのコンストラクタ）を持たねばいけません。
+				</p>
+</div>
+<div class="section"><h3><a name="ネーミング規約"></a>ネーミング規約</h3>
+<p>
+					エンティティに対応するテーブル名やプロパティに対応するカラム名を解決するためのネーミング規約を変更したい場合、
+					<code>naming</code> 要素に <code>org.seasar.doma.jdbc.entity.NamingType</code>
+					の列挙型を指定できます。
+				</p>
+<div class="source"><pre>@Entity(naming = NamingType.SNAKE_UPPER_CASE)
+public class EmployeeInfo {
+    ...
+}</pre>
+</div>
+<p><code>naming</code> 要素に何も指定しない場合、エンティティクラスが他のエンティティクラスを継承しているかどうかで採用する設定が変わります。
+				</p>
+<ul><li>継承している場合、親エンティティクラスの設定を引き継ぎます</li>
+<li>継承していない場合、何も行いません（<code>org.seasar.doma.jdbc.entity.NamingType.NONE</code> が使用されます）</li>
+</ul>
+<p><code>NamingType.SNAKE_UPPER_CASE</code>は、エンティティ名やプロパティ名をスネークケース（アンダースコア区切り）の大文字に変換します。この例の場合、テーブル名は<code>EMPLOYEE_INFO</code>になります。
+				</p>
+<p><code>naming</code>要素に何も指定しない場合、デフォルトでは、テーブル名にはエンティティクラスの単純名、カラム名にはプロパティ名が使用されます。
+				</p>
+<p>
+					ネーミング規約は、<code>@Table</code>や<code>@Colum</code>の<code>name</code>要素が指定されない場合のみ使用されます。
+					<code>@Table</code>や<code>@Colum</code>の<code>name</code>要素が指定された場合は、<code>name</code>要素に指定した値が使用され、ネーミング規約は適用されません。
+				</p>
+<p><code>NamingType</code>には次の列挙定数があります。
+				</p>
+<table class="bodyTable"><tr class="a"><th>列挙定数</th>
+<th>説明</th>
+</tr>
+<tr class="b"><td>NONE</td>
+<td>何も行いません。</td>
+</tr>
+<tr class="a"><td>SNAKE_UPPER_CASE</td>
+<td>キャメルケースをスネークケース（アンダースコア区切り）の大文字に変換します。</td>
+</tr>
+<tr class="b"><td>SNAKE_LOWER_CASE</td>
+<td>キャメルケースをスネークケース（アンダースコア区切り）の小文字に変換します。</td>
+</tr>
+<tr class="a"><td>UPPER_CASE</td>
+<td>大文字に変換します。</td>
+</tr>
+<tr class="b"><td>LOWER_CASE</td>
+<td>小文字に変換します。</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="テーブル"></a>テーブル</h3>
+<p>
+					エンティティに対応するテーブル情報を指定するには、 <code>@Table</code> を使用します。
+				</p>
+<p><code>name</code>要素でテーブル名を指定できます。
+				</p>
+<div class="source"><pre>@Entity
+@Table(name = &quot;EMP&quot;)
+public class Employee {
+    ...
+}</pre>
+</div>
+<p><code>catalog</code>要素や <code>schema</code>要素 でカタログやスキーマを指定できます。
+				</p>
+<div class="source"><pre>@Entity
+@Table(catalog = &quot;CATALOG&quot;, schema =&quot;SCHEMA&quot;, name = &quot;EMP&quot;)
+public class Employee {
+    ...
+}</pre>
+</div>
+<p><code>@Table</code>を使用しない、もしくは <code>@Table</code>の<code>name</code>要素を使用しない場合、
+					テーブル名は、<a href="#ネーミング規約">ネーミング規約</a>により解決されます。
+				</p>
+</div>
+<div class="section"><h3><a name="継承"></a>継承</h3>
+<p>
+					任意のクラスを継承できます。
+				</p>
+<p>
+					ただし、親クラスのフィールドが永続フィールドとみなされたりDomaのアノテーションが解釈されたりするのは、親クラスが@Entityで注釈されている場合だけです。
+				</p>
+</div>
+</div>
+<div class="section"><h2><a name="フィールド定義"></a>フィールド定義</h2>
+<div class="section"><h3><a name="永続的なフィールド"></a>永続的なフィールド</h3>
+<p>
+					永続的なフィールドは、テーブルや結果セットのカラムに対応します。
+				</p>
+<p>
+					フィールドの型は、<a href="basic.html">基本型</a>もしくは<a href="domain.html">ドメインクラス</a>でなければいけません。
+				</p>
+<div class="source"><pre>@Entity
+public class Employee {
+    ...
+    Integer employeeId;
+}</pre>
+</div>
+</div>
+<h4><a name="カラム"></a>カラム</h4>
+<p>
+					プロパティに対応するカラム情報を指定するには、<code>@Column</code>を使用します。
+				</p>
+<p><code>name</code>要素でカラム名を指定できます。
+				</p>
+<div class="source"><pre>@Column(name = &quot;ENAME&quot;)
+String employeeName;</pre>
+</div>
+<p><code>insertable</code>要素や <code>updatable</code>要素 で挿入や更新の対象とするかどうかを指定できます。
+				</p>
+<div class="source"><pre>@Column(insertable = false, updatable = false)
+String employeeName;</pre>
+</div>
+<p><code>@Column</code>を使用しない、もしくは<code>@Column</code>の <code>name</code>要素を使用しない場合、
+					カラム名は、<a href="#ネーミング規約">ネーミング規約</a>により解決されます。
+				</p>
+<h4><a name="識別子"></a>識別子</h4>
+<p>
+					識別子(主キー)であることを指定するには、<code>@Id</code>を使います。 
+				</p>
+<div class="source"><pre>@Id
+Integer id;</pre>
+</div>
+<p>
+					複合主キーの場合は <code>@Id</code> を複数指定します。 
+				</p>
+<div class="source"><pre>@Id
+Integer id;
+
+@Id
+Integer id2;</pre>
+</div>
+<p>
+					識別子を自動生成する場合は、<code>@GeneratedValue</code>を使用し、
+					生成方法を<code>strategy</code>要素に指定します。 
+					このアノテーションが注釈されるフィールドの型は数値のプリミティブ型、
+					もしくは<code>Number</code>のサブタイプでなければいけません。
+				</p>
+<p><code>strategy</code> 要素に指定できる方法は、次の3つです。
+				</p>
+<ul><li><code>GenerationType.IDENTITY</code></li>
+<li><code>GenerationType.SEQUENCE</code></li>
+<li><code>GenerationType.TABLE</code></li>
+</ul>
+<h5><code>GenerationType.IDENTITY</code></h5>
+<p>
+					データベースのIDENTITY自動生成機能を利用する方法です。RDBMSによってはサポートされていません。
+					フィールドに対応するカラムの定義でIDENTITY自動生成を有効にしておく必要があります。
+<div class="source"><pre>@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+Integer id;</pre>
+</div>
+</p>
+<h5><code>GenerationType.SEQUENCE</code></h5>
+<p>
+					データベースのシーケンスを利用する方法です。RDBMSによってはサポートされていません。
+				</p>
+<p><code>GenerationType.SEQUENCE</code>を使用するには、
+					<code>@SequenceGenerator</code>を併記します。
+					<code>@SequenceGenerator</code>では、シーケンスの名前、割り当てサイズ、初期値等を設定できます。
+					データベースにあらかじめシーケンスを定義しておく必要がありますが、その定義は<code>@SequenceGenerator</code>の定義とあわせておく必要があります。
+				</p>
+<div class="source"><pre>@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE)
+@SequenceGenerator(sequence = &quot;EMPLOYEE_SEQ&quot;)
+Integer id;</pre>
+</div>
+<h5><code>GenerationType.TABLE</code></h5>
+<p>
+					生成される識別子をテーブルで管理する方法です。すべてのRDBMSで利用できます。
+				</p>
+<p><code>GenerationType.TABLE</code>を使用するには、
+					<code>@TableGenerator</code>を併記します。
+					<code>@TableGenerator</code>では、テーブル名、割り当てサイズ、初期値等を設定できます。
+					データベースにあらかじめテーブルを定義しておく必要がありますが、その定義は<code>@TableGenerator</code>の定義とあわせておく必要があります。
+					デフォルトでは、「ID_GENERATOR」という名前のテーブルに、文字列型の「PK」と数値型の「VALUE」という2つのカラムが定義されているものとして動作します（「PK」カラムが主キーです）。
+					「PK」カラムにはエンティティクラスごとの一意な名前、「VALUE」カラムには識別子の値が格納されます。
+					テーブルには、エンティティクラスごとのレコードをあらかじめ登録しておく必要があります。
+				</p>
+<div class="source"><pre>@Id
+@GeneratedValue(strategy = GenerationType.TABLE)
+@TableGenerator(pkColumnValue = &quot;EMPLOYEE_ID&quot;)
+Integer id;</pre>
+</div>
+<p><code>@TableGenerator</code>の<code>pkColumnValue</code>要素には、
+					識別子を管理するテーブル（デフォルトでは、「ID_GENERATOR」という名前のテーブル）の主キーの値を指定します。
+				</p>
+<h4><a name="バージョン"></a>バージョン</h4>
+<p>
+					楽観的排他制御用のバージョンは<code>@Version</code>を注釈して示します。
+				</p>
+<p>
+					フィールドの型は数値のプリミティブ型
+					もしくは<code>Number</code>のサブタイプでなければいけません。
+				</p>
+<div class="source"><pre>@Version
+Integer version;</pre>
+</div>
+<div class="section"><h3><a name="非永続的なフィールド"></a>非永続的なフィールド</h3>
+<p>
+					非永続的なフィールドは、テーブルや結果セットのカラムに対応しません。
+				</p>
+<p><code>@Transient</code>を注釈して示します。
+					フィールドの型や可視性に制限はありません。
+				</p>
+<div class="source"><pre>@Transient
+BigDecimal tempSalary;</pre>
+</div>
+<div class="source"><pre>@Transient
+List&lt;String&gt; nameList;</pre>
+</div>
+</div>
+<div class="section"><h3><a name="取得時の状態を管理するフィールド"></a>取得時の状態を管理するフィールド</h3>
+<p>
+					取得時の状態とは、エンティティがDaoから取得されときの全プロパティの値です。
+					取得時の状態を保持しておくことで、Daoインタフェースの@Updateが注釈されたメソッドを介して更新処理を実行する際、
+					UPDATE文のSET句に変更したフィールドのみを含めるようにすることが可能です。
+					取得時の状態を管理するフィールドは、テーブルや結果セットのカラムに対応しません。
+				</p>
+<p><code>@OriginalStates</code>を注釈して示します。
+					フィールドの型はフィールドが属するエンティティクラスと同じ型でなければいけません。
+					<code>@OriginalStates</code>が注釈されたフィールドはアプリケーションで初期化したりアクセスしたりしてはいけません。
+				</p>
+<div class="source"><pre>@OriginalStates
+Employee originalStates;</pre>
+</div>
+<p><code>@OriginalStates</code>が注釈されたフィールドを持つエンティティの利用法は次のとおりです。
+				</p>
+<div class="source"><pre>@Entity
+public class Employee {
+
+   @Id
+   Integer id;
+
+   String name;
+
+   Integer age;
+
+   @OriginalStates
+   Employee originalStates;
+
+   ...
+}</pre>
+</div>
+<div class="source"><pre>EmployeeDao dao = new EmployeeDaoImpl();
+Employee employee =dao.selectById(1);
+emoloyee.setAge(employee.getAge() + 1);
+dao.update(employee);
+</pre>
+</div>
+<p>
+					この例では、UPDATE文のSET句にAGEカラムだけが含まれます。
+				</p>
+</div>
+</div>
+<div class="section"><h2><a name="メソッド定義"></a>メソッド定義</h2>
+<p>
+				メソッドの定義に制限はありません。
+				フィールドの可視性を<code>protected</code>やパッケージプライベートにしてpublicなメソッド経由でアクセスすることも、
+				メソッドを一切使用せず<code>public</code>フィールドに直接アクセスすることもどちらもサポートされています。
+			</p>
+</div>
+<div class="section"><h2><a name="エンティティの利用方法"></a>エンティティの利用方法</h2>
+<p>
+				インスタンス化して使用します。
+			</p>
+<div class="source"><pre>Employee employee = new Employee();
+employee.setEmployeeId(1);
+employee.setEmployeeName(&quot;SMITH&quot;);
+employee.setSalary(new BigDecimal(1000));</pre>
+</div>
+<p>
+				エンティティはテーブルに1対1で対応させなければいけないわけではありません。
+				たとえば、<code>EMPLOYEE</code>テーブルと<code>DEPARTMENT</code>テーブルを結合した結果もエンティティにマッピングできます。
+				そのエンティティクラスを<code>EmpDeptDto</code>とした場合のエンティティクラスの定義とDaoインタフェースの定義は次のとおりです。
+			</p>
+<div class="source"><pre>@Entity
+public class EmpDeptDto {
+    String employeeName;
+    String departmentName;
+}</pre>
+</div>
+<div class="source"><pre>@Dao(config = AppConfig.class)
+public interface EmployeeDao {
+    @Select
+    EmpDeptDto selectByDepartmentId(Integer departmentId);
+}</pre>
+</div>
+</div>
+
+</div><!-- article -->
+
+</div><!-- contents_center -->
+
+<div id="footer">
+<address>  &copy; Copyright 
+                    <a href="http://www.seasarfoundation.org/">The Seasar Foundation</a>.
+            and the others
+    
+              2009-2014,
+        all rights reserved.
+  <a href="http://www.seasar.org">The Seasar Project</a>.
+</address>
+<div class="line"><span class="hide">spacer</span></div>
+</div><!-- footer -->
+
+</div><!-- wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+select * from Emp where id = /*%if id.intValue() == 0*/ id = /*id*/1 /*%end*/

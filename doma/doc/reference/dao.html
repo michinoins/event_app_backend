@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Language" content="ja" /> 
+<meta http-equiv="Content-Style-Type" content="text/css" /> 
+<title>Doma - Daoインタフェース</title>
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/main.css" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/print.css" media="print" />
+<link href="../css/maven-base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/maven-theme.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+
+<div id="wrapper">
+
+<div id="header">
+
+<div class="line"><span class="hide">spacer</span></div>
+
+<div id="logo"><h1 id="h01" class="hide">The Seasar Project</h1><a href="http://www.seasar.org/" alt="The Seasar Project" title="The Seasar Project"><img src="http://www.seasar.org/images/seasar_logo_blue.gif" alt="The Seasar Project" width="390" height="180" /></a></div>
+
+<div id="tool">
+
+<h2><a href="http://search.seasar.org/">Site Search</a></h2>
+
+<form id="search" action="http://search.seasar.org/">
+<div>
+	<input id="search_phrase" type="text" name="phrase" size="20" />
+	<input type="hidden" name="perpage" value="30" />
+	<input type="hidden" name="enc" value="UTF-8" />
+	<input id="search_go" type="submit" value="Search" />
+</div>
+</form>
+
+<h2>Seasar Banner</h2>
+            <a href="http://www.seasar.org/" id="bannerLeft">
+    
+                                    <img src="http://www.seasar.org/images/seasar_banner.gif" alt="" />
+    
+            </a>
+      
+</div>
+
+<div id="navi">
+	<p id="navi_left">  
+          <a href="http://www.seasar.org/">Seasar</a>
+              &gt;
+      
+          <a href="../index.html">Doma</a>
+          </p>
+	<p id="navi_right"><a href="../../en/">English</a> | <a href="../../ja/">Japanese</a></p>
+</div>
+
+</div><!-- header -->
+
+<div id="contents_left">
+           
+  
+
+  
+    
+  
+  
+                   <h2>About</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../index.html">ホーム</a>
+        </li>
+              
+    <li class="none">
+              <a href="../overview.html">概要</a>
+        </li>
+              
+    <li class="none">
+              <a href="../downloads.html">ダウンロード</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA">課題追跡</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">変更履歴</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://ml.seasar.org/mailman/listinfo/seasar-user">メーリングリスト</a>
+        </li>
+              
+    <li class="none">
+              <a href="../faq.html">よくある質問</a>
+        </li>
+          </ul>
+          <h2>ドキュメント</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../setup.html">セットアップ</a>
+        </li>
+              
+    <li class="none">
+              <a href="../quick_start.html">クイックスタート</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../tutorial/index.html">チュートリアル</a>
+              </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+                  
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+              <a href="../reference/index.html">リファレンス</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="../reference/basic.html">基本型</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/domain.html">ドメインクラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/entity.html">エンティティクラス</a>
+        </li>
+                  
+    <li class="none">
+              <strong>Daoインタフェース</strong>
+        </li>
+                  
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../reference/query/index.html">クエリ</a>
+              </li>
+                  
+    <li class="none">
+              <a href="../reference/config.html">設定クラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/sqlfile.html">SQLファイル</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/transaction.html">トランザクション</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/apt.html">注釈処理</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/app_build.html">アプリケーションのビルド方法</a>
+        </li>
+              </ul>
+        </li>
+              
+    <li class="none">
+              <a href="../jpetstore.html">デモアプリ - Doma JPetStore</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+                    
+        <li class="collapsed">
+              <a href="../extension/index.html">開発支援ツール</a>
+              </li>
+              
+    <li class="none">
+              <a href="http://www.seasar.org/wiki/index.php?DomaUpdateOperationLog">移行ガイド</a>
+        </li>
+          </ul>
+          <h2>Javadocs</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../apidocs/index.html">Doma</a>
+        </li>
+              
+    <li class="none">
+              <a href="../extension/doma-gen/apidocs/index.html">Doma-Gen</a>
+        </li>
+          </ul>
+          <h2>プロジェクト文書</h2>
+        <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../project-info.html">プロジェクト情報</a>
+              </li>
+          </ul>
+                                       <a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy" name="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png" />
+          </a>
+                       
+  
+
+  
+    
+  
+  
+  </div><!-- contents_left -->
+
+<div id="contents_center">
+
+<div id="article">
+<div class="section"><h2><a name="目次"></a>目次</h2>
+<ul><li><a href="#概要">概要</a></li>
+<li><a href="#Dao定義">Dao定義</a><ul><li><a href="#継承">継承</a></li>
+</ul>
+</li>
+<li><a href="#クエリ定義">クエリ定義</a></li>
+<li><a href="#デリゲート定義">デリゲート定義</a><ul><li><a href="#ビルダを利用したSQLの組み立て">ビルダを利用したSQLの組み立て</a></li>
+</ul>
+</li>
+<li><a href="#Daoの利用方法">Daoの利用方法</a></li>
+</ul>
+</div>
+<div class="section"><h2><a name="概要"></a>概要</h2>
+<p>
+				Data Access Object （Dao） はデータベースアクセスのためのインタフェースです。
+			</p>
+<p>
+				このページで説明するアノテーションはすべて <code>org.seasar.doma</code> パッケージに属します。
+			</p>
+</div>
+<div class="section"><h2><a name="Dao定義"></a>Dao定義</h2>
+<p>
+				Daoは <a href="../apidocs/org/seasar/doma/Dao.html"><code>@Dao</code></a>が注釈されたインタフェースとして定義します。
+				インタフェースはトップレベルのインタフェースでなければいけません（他のクラスやインタフェースにネストされていてはいけません）。
+				インタフェースの実装クラスはaptによりコンパイル時に自動生成されます。
+			</p>
+<div class="source"><pre>@Dao(config = AppConfig.class)
+public interface EmployeeDao {
+    ...
+}</pre>
+</div>
+<p><code>@Dao</code>の <code>config</code>要素には、
+				<code>org.seasar.doma.jdbc.Config</code>の実装クラスを指定しなければいけません。
+				<code>Config</code>の実装クラスは、データソース、データベースの方言、ネーミング規約等の<a href="config.html">設定</a>を行います。
+			</p>
+<div class="section"><h3><a name="継承"></a>継承</h3>
+
+				@Daoが注釈された他のDaoを1つのみ継承できます。
+<div class="source"><pre>@Dao(config = AppConfig.class)
+public interface EmployeeDao {
+    ...
+}</pre>
+</div>
+<div class="source"><pre>@Dao(config = AppConfig.class)
+public interface ParttimeEmployeeDao extends EmployeeDao {
+    ...
+}</pre>
+</div>
+</div>
+</div>
+<div class="section"><h2><a name="クエリ定義"></a>クエリ定義</h2>
+<p>
+				SQLを問い合わせるクエリメソッドには、アノテーションが必須です。
+				詳細は、<a href="query/index.html">クエリ</a>を参照してください。
+			</p>
+</div>
+<div class="section"><h2><a name="デリゲート定義"></a>デリゲート定義</h2>
+<p>
+				Daoは、インタフェースであるためロジックをもつことができません。
+				しかし、 <code>@Delegate</code>を注釈することで別のクラスに処理を委譲（デリゲート）できます。
+				この機能は、JDBCのAPIやビルダのAPIを使ってSQLをプログラムで組み立てたい場合に使用するとよいでしょう。
+			</p>
+<div class="source"><pre>@Dao(config = AppConfig.class)
+public interface EmployeeDao {
+
+    @Delegate(to = EmployeeDaoDelegate.class)
+    int execute(Employee employee);
+}</pre>
+</div>
+<p><code>@Delegate</code> の <code>to</code>要素には、委譲先のクラスを指定します。
+				委譲先のクラスの<code>public</code>なコンストラクタでは、<code>org.seasar.doma.jdbc.Config</code>を受け取るようにします。
+			</p>
+<div class="source"><pre>public class EmployeeDaoDelegate {
+
+    private Config config;
+    
+    public EmployeeDaoDelegate(Config config) {
+        this.config = config;
+    }
+
+    public int execute(Employee employee) {
+        DataSource dataSource = config.dataSource();
+        ...
+    }
+}</pre>
+</div>
+<p>
+				委譲先で委譲元のDaoインスタンスにアクセスしたい場合は、<code>public</code>なコンストラクタの2番目のパラメータで委譲元のDaoの型を受け取るようにします。
+			</p>
+<div class="source"><pre>public class EmployeeDaoDelegate {
+
+    private Config config;
+    
+    private EmployeeDao employeeDao;
+    
+    public EmployeeDaoDelegate(Config config, EmployeeDao employeeDao) {
+        this.config = config;
+        this.employeeDao = employeeDao;
+    }
+
+    public int execute(Employee employee) {
+        ...
+    }
+}</pre>
+</div>
+<p>
+				委譲先のクラスは次の制約を満たす必要があります。
+			</p>
+<ul><li><code>org.seasar.doma.jdbc.Config</code>を受け取るpublicなコンストラクタを持つ、もしくは、<code>org.seasar.doma.jdbc.Config</code>と委譲元のDaoを受け取るpublicなコンストラクタを持つ</li>
+<li>委譲元のメソッドと同じシグニチャのメソッドを持つ</li>
+</ul>
+<div class="section"><h3><a name="ビルダを利用したSQLの組み立て"></a>ビルダを利用したSQLの組み立て</h3>
+<p><code>org.seasar.doma.jdbc.builder</code>パッケージでは、プログラムでSQLを組み立てるためのビルダクラスを提供しています。
+					何らかの理由により<a href="#クエリ定義">クエリ定義</a>を利用した問い合わせが難しい場合にのみ、これらのビルダクラスを利用することを推奨します。
+					また、ビルダクラスはデリゲート定義と組み合わせて使用することを推奨します。
+				</p>
+<h4>検索</h4>
+<p>
+					検索には、<code>SelectBuilder</code>クラスを使用します。
+					このクラスのインスタンスは、<code>org.seasar.doma.jdbc.Config</code>型の引数をとる<code>static</code>な<code>newInstance</code>メソッドで生成できます。
+					インスタンスには、<code>sql</code>メソッドでSQL文字列の断片を、<code>param</code>メソッドでパラメータの型とパラメータを渡せます。
+				</p>
+<p>
+					利用例は次のとおりです。
+				</p>
+<div class="source"><pre> SelectBuilder builder = SelectBuilder.newInstance(config);
+ builder.sql(&quot;select&quot;);
+ builder.sql(&quot;id&quot;).sql(&quot;,&quot;);
+ builder.sql(&quot;name&quot;).sql(&quot;,&quot;);
+ builder.sql(&quot;salary&quot;);
+ builder.sql(&quot;from Emp&quot;);
+ builder.sql(&quot;where&quot;);
+ builder.sql(&quot;name like &quot;).param(String.class, &quot;S%&quot;);
+ builder.sql(&quot;and&quot;);
+ builder.sql(&quot;age &gt; &quot;).param(int.class, 20);
+ Emp emp = builder.getSingleResult(Emp.class);</pre>
+</div>
+<p>
+					組み立てたSQLの実行結果は、<code>getSingleResult</code>、<code>getResultList</code>、<code>iterate</code>のメソッドで処理できます。
+					それぞれ、1件を処理したい場合、複数件を処理したい場合、複数件を1件ずつ処理したい場合に使用します。
+				</p>
+<h4>挿入</h4>
+<p>
+					挿入には、<code>InsertBuilder</code>クラスを使用します。
+					このクラスのインスタンスは、<code>org.seasar.doma.jdbc.Config</code>型の引数をとる<code>static</code>な<code>newInstance</code>メソッドで生成できます。
+					インスタンスには、<code>sql</code>メソッドでSQL文字列の断片を、<code>param</code>メソッドでパラメータの型とパラメータを渡せます。
+				</p>
+<div class="source"><pre> InsertBuilder builder = InsertBuilder.newInstance(config);
+ builder.sql(&quot;insert into Emp&quot;);
+ builder.sql(&quot;(name, salary)&quot;);
+ builder.sql(&quot;values (&quot;);
+ builder.param(String.class, &quot;SMITH&quot;).sql(&quot;, &quot;);
+ builder.param(BigDecimal.class, new BigDecimal(1000)).sql(&quot;)&quot;);
+ builder.execute();</pre>
+</div>
+<p>
+					組み立てたSQLは<code>execute</code>メソッドで実行できます。
+				</p>
+<h4>更新</h4>
+<p>
+					更新には、<code>UpdateBuilder</code>クラスを使用します。
+					このクラスのインスタンスは、<code>org.seasar.doma.jdbc.Config</code>型の引数をとる<code>static</code>な<code>newInstance</code>メソッドで生成できます。
+					インスタンスには、<code>sql</code>メソッドでSQL文字列の断片を、<code>param</code>メソッドでパラメータの型とパラメータを渡せます。
+				</p>
+<div class="source"><pre> UpdateBuilder builder = UpdateBuilder.newInstance(config);
+ builder.sql(&quot;update Emp&quot;);
+ builder.sql(&quot;set&quot;);
+ builder.sql(&quot;name = &quot;).param(String.class, &quot;SMIHT&quot;).sql(&quot;,&quot;);
+ builder.sql(&quot;salary = &quot;).param(BigDecimal.class, new BigDecimal(&quot;1000&quot;));
+ builder.sql(&quot;where&quot;);
+ builder.sql(&quot;id = &quot;).param(int.class, 10);
+ builder.execute();
+</pre>
+</div>
+<p>
+					組み立てたSQLは<code>execute</code>メソッドで実行できます。
+				</p>
+<h4>削除</h4>
+<p>
+					削除には、<code>DeleteBuilder</code>クラスを使用します。
+					このクラスのインスタンスは、<code>org.seasar.doma.jdbc.Config</code>型の引数をとる<code>static</code>な<code>newInstance</code>メソッドで生成できます。
+					インスタンスには、<code>sql</code>メソッドでSQL文字列の断片を、<code>param</code>メソッドでパラメータの型とパラメータを渡せます。
+				</p>
+<div class="source"><pre> DeleteBuilder builder = DeleteBuilder.newInstance(config);
+ builder.sql(&quot;delete from Emp&quot;);
+ builder.sql(&quot;where&quot;);
+ builder.sql(&quot;name = &quot;).param(String.class, &quot;SMITH&quot;);
+ builder.sql(&quot;and&quot;);
+ builder.sql(&quot;salary = &quot;).param(BigDecimal.class, new BigDecimal(1000));
+ builder.execute();</pre>
+</div>
+<p>
+					組み立てたSQLは<code>execute</code>メソッドで実行できます。
+				</p>
+</div>
+</div>
+<div class="section"><h2><a name="Daoの利用方法"></a>Daoの利用方法</h2>
+<p>
+				コンパイルすると、aptにより実装クラスが生成されます。
+				実装クラスをインスタンス化して使用してください。
+				ただし、<a href="config.html#DIコンテナを利用する場合の設定例">設定クラスをDIコンテナで管理する</a>場合は、Daoのインスタンス化はアプリケーションのコードで行わずDIコンテナで制御してください。
+			</p>
+<div class="source"><pre>EmployeeDao employeeDao = new EmployeeDaoImpl();
+Employee employee = employeeDao.selectById(1);</pre>
+</div>
+<p>
+				デフォルトでは、実装クラスの名前はインタフェースの名前に<code>Impl</code>をサフィックスしたものになります。
+				パッケージやサフィックスを変更するには、<a href="apt.html">アノテーション処理</a>を参照してください。
+			</p>
+<p>
+				デフォルトコンストラクタを使用した場合は、<code>@Dao</code>の <code>config</code>要素に
+				指定した設定により<code>javax.sql.DataSource</code>が決定されますが、
+				特定の <code>DataSource</code>を指定してインスタンス化することも可能です。
+			</p>
+<div class="source"><pre>DataSource dataSource = ...;
+EmployeeDao employeeDao = new EmployeeDaoImpl(dataSource);
+Employee employee = employeeDao.selectById(1);</pre>
+</div>
+<p>
+				また、同様に<code>java.sql.Connection</code>を指定してインスタンス化することも可能です。
+			</p>
+<div class="source"><pre>Connection connection = ...;
+EmployeeDao employeeDao = new EmployeeDaoImpl(connection);
+Employee employee = employeeDao.selectById(1);</pre>
+</div>
+<p><code>DataSource</code>や<code>Connection</code>をコンストラクタに指定してインスタンス化する方法は、
+				JDBCを直接利用した既存のアプリケーションで利用するのに適しています。
+			</p>
+<p>
+				Daoインタフェースはエンティティクラスと1対1で結びついているわけではありません。
+				ひとつのDaoインタフェースで複数のエンティティクラスを扱えます。
+			</p>
+<div class="source"><pre>@Dao(config = AppConfig.class)
+public interface MyDao {
+    @Select
+    Employee selectEmployeeById(int id);
+    @Select
+    Department selectDepartmentByName(String name);
+    @Update
+    int updateAddress(Address address);
+}</pre>
+</div>
+</div>
+
+</div><!-- article -->
+
+</div><!-- contents_center -->
+
+<div id="footer">
+<address>  &copy; Copyright 
+                    <a href="http://www.seasarfoundation.org/">The Seasar Foundation</a>.
+            and the others
+    
+              2009-2014,
+        all rights reserved.
+  <a href="http://www.seasar.org">The Seasar Project</a>.
+</address>
+<div class="line"><span class="hide">spacer</span></div>
+</div><!-- footer -->
+
+</div><!-- wrapper -->
+
+</body>
+</html>

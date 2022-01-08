@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Language" content="ja" /> 
+<meta http-equiv="Content-Style-Type" content="text/css" /> 
+<title>Doma - アノテーション処理</title>
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/main.css" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="http://www.seasar.org/theme/print.css" media="print" />
+<link href="../css/maven-base.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/maven-theme.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+</head>
+
+<body onload="prettyPrint()">
+
+<div id="wrapper">
+
+<div id="header">
+
+<div class="line"><span class="hide">spacer</span></div>
+
+<div id="logo"><h1 id="h01" class="hide">The Seasar Project</h1><a href="http://www.seasar.org/" alt="The Seasar Project" title="The Seasar Project"><img src="http://www.seasar.org/images/seasar_logo_blue.gif" alt="The Seasar Project" width="390" height="180" /></a></div>
+
+<div id="tool">
+
+<h2><a href="http://search.seasar.org/">Site Search</a></h2>
+
+<form id="search" action="http://search.seasar.org/">
+<div>
+	<input id="search_phrase" type="text" name="phrase" size="20" />
+	<input type="hidden" name="perpage" value="30" />
+	<input type="hidden" name="enc" value="UTF-8" />
+	<input id="search_go" type="submit" value="Search" />
+</div>
+</form>
+
+<h2>Seasar Banner</h2>
+            <a href="http://www.seasar.org/" id="bannerLeft">
+    
+                                    <img src="http://www.seasar.org/images/seasar_banner.gif" alt="" />
+    
+            </a>
+      
+</div>
+
+<div id="navi">
+	<p id="navi_left">  
+          <a href="http://www.seasar.org/">Seasar</a>
+              &gt;
+      
+          <a href="../index.html">Doma</a>
+          </p>
+	<p id="navi_right"><a href="../../en/">English</a> | <a href="../../ja/">Japanese</a></p>
+</div>
+
+</div><!-- header -->
+
+<div id="contents_left">
+           
+  
+
+  
+    
+  
+  
+                   <h2>About</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../index.html">ホーム</a>
+        </li>
+              
+    <li class="none">
+              <a href="../overview.html">概要</a>
+        </li>
+              
+    <li class="none">
+              <a href="../downloads.html">ダウンロード</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA">課題追跡</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://www.seasar.org/issues/browse/DOMA#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">変更履歴</a>
+        </li>
+              
+    <li class="none">
+              <a href="https://ml.seasar.org/mailman/listinfo/seasar-user">メーリングリスト</a>
+        </li>
+              
+    <li class="none">
+              <a href="../faq.html">よくある質問</a>
+        </li>
+          </ul>
+          <h2>ドキュメント</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../setup.html">セットアップ</a>
+        </li>
+              
+    <li class="none">
+              <a href="../quick_start.html">クイックスタート</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../tutorial/index.html">チュートリアル</a>
+              </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+                  
+      
+            
+      
+            
+      
+            
+            
+            
+      
+              
+            <li class="expanded">
+              <a href="../reference/index.html">リファレンス</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="../reference/basic.html">基本型</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/domain.html">ドメインクラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/entity.html">エンティティクラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/dao.html">Daoインタフェース</a>
+        </li>
+                  
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../reference/query/index.html">クエリ</a>
+              </li>
+                  
+    <li class="none">
+              <a href="../reference/config.html">設定クラス</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/sqlfile.html">SQLファイル</a>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/transaction.html">トランザクション</a>
+        </li>
+                  
+    <li class="none">
+              <strong>注釈処理</strong>
+        </li>
+                  
+    <li class="none">
+              <a href="../reference/app_build.html">アプリケーションのビルド方法</a>
+        </li>
+              </ul>
+        </li>
+              
+    <li class="none">
+              <a href="../jpetstore.html">デモアプリ - Doma JPetStore</a>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+                    
+        <li class="collapsed">
+              <a href="../extension/index.html">開発支援ツール</a>
+              </li>
+              
+    <li class="none">
+              <a href="http://www.seasar.org/wiki/index.php?DomaUpdateOperationLog">移行ガイド</a>
+        </li>
+          </ul>
+          <h2>Javadocs</h2>
+        <ul>
+              
+    <li class="none">
+              <a href="../apidocs/index.html">Doma</a>
+        </li>
+              
+    <li class="none">
+              <a href="../extension/doma-gen/apidocs/index.html">Doma-Gen</a>
+        </li>
+          </ul>
+          <h2>プロジェクト文書</h2>
+        <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="../project-info.html">プロジェクト情報</a>
+              </li>
+          </ul>
+                                       <a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy" name="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png" />
+          </a>
+                       
+  
+
+  
+    
+  
+  
+  </div><!-- contents_left -->
+
+<div id="contents_center">
+
+<div id="article">
+<div class="section"><h2><a name="目次"></a>目次</h2>
+<ul><li><a href="#概要">概要</a></li>
+<li><a href="#オプション">オプション</a><ul><li><a href="#Eclipseでのオプション指定">Eclipseでのオプション指定</a></li>
+<li><a href="#javacでのオプション指定">javacでのオプション指定</a></li>
+<li><a href="#Antでのオプション指定">Antでのオプション指定</a></li>
+<li><a href="#Mavenでのオプション指定">Mavenでのオプション指定</a></li>
+<li><a href="#Gradleでのオプション指定">Gradleでのオプション指定</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section"><h2><a name="概要"></a>概要</h2>
+<p><a class="externalLink" href="http://java.sun.com/javase/6/docs/technotes/guides/apt/index.html">Annotation Processing Tool （apt）  </a> 
+				を利用すると、ソースコードの自動生成や検証を<b>コンパイル時</b>に行うことができます。
+			</p>
+<p>
+				DomaではこのAPIを利用し、@Entityや@Daoと言ったアノテーションが注釈されたクラスやインタフェースを処理し、必要なクラスを自動生成します。
+				また、注釈されたクラスやインタフェースの検証を行い、Domaの規約に従っていないソースコードがある場合は
+				エラーメッセージをIDE（Eclipseなど）のエディタやjavacを実行したコンソール上に表示します。
+			</p>
+</div>
+<div class="section"><h2><a name="オプション"></a>オプション</h2>
+<p>
+				注釈処理にはオプションを与えることができます。
+				Domaで定義しているオプションには次のものがあります。
+				必要に応じて使用してください。
+			</p>
+<table class="bodyTable"><tr class="a"><th>key</th>
+<th>説明</th>
+<th>デフォルトの値</th>
+</tr>
+<tr class="b"><td>dao.package</td>
+<td>@Daoが注釈されたインタフェースの実装クラスが生成されるパッケージ。
+					何らかの値を指定した場合、dao.subpackageの指定よりも優先される。</td>
+<td>@Daoが注釈されたインタフェースと同じパッケージ</td>
+</tr>
+<tr class="a"><td>dao.subpackage</td>
+<td>@Daoが注釈されたインタフェースの実装クラスが生成されるサブパッケージ。
+					dao.packageに値を指定していない場合にのみ有効。
+					@Daoが注釈されたインタフェースのパッケージが「example.dao」で、ここに指定した値が「impl」の場合、
+					生成されるクラスのパッケージは「example.dao.impl」となる。</td>
+<td></td>
+</tr>
+<tr class="b"><td>dao.suffix</td>
+<td>@Daoが注釈されたインタフェースの実装クラスの名前のサフィックス。
+					@Daoが注釈されたインタフェースの単純名が「EmployeeDao」で、ここに指定した値が「Bean」の場合、
+					生成されるクラスの単純名は「EmployeeDaoBean」となる。</td>
+<td>Impl</td>
+</tr>
+<tr class="a"><td>debug</td>
+<td>注釈処理のデバッグ情報をログ出力するかどうか。「true」の場合、ログ出力を行う。</td>
+<td>false</td>
+</tr>
+<tr class="b"><td>domain.converters</td>
+<td>任意の型と基本型を相互変換するDomainConverterのプロバイダとなるクラスの完全修飾名のカンマ区切り。
+					クラスは<a class="externalLink" href="http://doma.seasar.org/apidocs/org/seasar/doma/DomainConverters.html"><code>org.seasar.doma.DomainConverters</code></a>
+					によって注釈されていないければいけない。</td>
+<td></td>
+</tr>
+<tr class="a"><td>entity.field.prefix</td>
+<td>@Entityが注釈されたクラスごとに生成されるタイプクラスで使用される。
+					タイプクラスのpublicなフィールド名のプレフィックス。
+					「none」を指定すると、プレフィックスを使用しないという意味になる。</td>
+<td>$</td>
+</tr>
+<tr class="b"><td>expr.functions</td>
+<td><a href="sqlfile.html#SQLコメント">式コメント</a>で利用可能な関数群を表すクラスの完全修飾名。
+					<a href="../apidocs/org/seasar/doma/expr/ExpressionFunctions.html"><code>org.seasar.doma.expr.ExpressionFunctions</code></a>のサブタイプでなければいけない。</td>
+<td>org.seasar.doma.expr.ExpressionFunctions</td>
+</tr>
+<tr class="a"><td>sql.validation</td>
+<td>SQLファイルの存在チェックとSQLコメントの文法チェックを行う場合は、true。行わない場合は、false。</td>
+<td>true</td>
+</tr>
+<tr class="b"><td>version.validation</td>
+<td>
+						注釈処理によるソースコード生成で利用したDomaのバージョンと実行時のDomaのバージョンが同じであることをチェックする場合は、true。しない場合は、false。
+						Domaのあるバージョンで生成されたコードを含むライブラリを作成する場合にfalseを指定してビルドすると、そのライブラリの再利用性が高まります。
+						ライブラリが依存するDomaのバージョンとは異なるバージョンのDomaで実行できるからです（Domaのバージョンに互換性がある限りにおいて）。
+					</td>
+<td>true</td>
+</tr>
+</table>
+<div class="section"><h3><a name="Eclipseでのオプション指定"></a>Eclipseでのオプション指定</h3>
+<p>
+					Ecipseでは、プロジェクトのプロパティの「Annotation Processing」の項目でオプションを登録します。
+				</p>
+<img src="../images/eclipse_apt_options.png" alt="Eclipseでのオプション指定" /></div>
+<div class="section"><h3><a name="javacでのオプション指定"></a>javacでのオプション指定</h3>
+<p>
+					-Aオプションにより登録します。詳細は<a class="externalLink" href="http://java.sun.com/javase/ja/6/docs/ja/technotes/guides/javac/index.html">javacのドキュメント</a>を参照してください。
+				</p>
+</div>
+<div class="section"><h3><a name="Antでのオプション指定"></a>Antでのオプション指定</h3>
+<p>
+					javacタスクのcompilerargタグのlineパラメータを使用します。
+				</p>
+<div class="source"><pre>&lt;javac fork=&quot;yes&quot; srcdir=&quot;src&quot; compiler=&quot;javac1.6&quot;
+	classpathref=&quot;classpath&quot; destdir=&quot;target&quot; debug=&quot;on&quot; encoding=&quot;UTF-8&quot; &gt;
+	&lt;compilerarg line=&quot;-Adao.subpackage=impl -Adto.suffix=Dao -Adto.debug=true &quot;/&gt;
+&lt;/javac&gt;</pre>
+</div>
+</div>
+<div class="section"><h3><a name="Mavenでのオプション指定"></a>Mavenでのオプション指定</h3>
+<p>
+					maven-compiler-pluginのcompilerArgumentタグを使用します。
+				</p>
+<div class="source"><pre>&lt;plugin&gt;
+	&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+	&lt;configuration&gt;
+		&lt;source&gt;1.6&lt;/source&gt;
+		&lt;target&gt;1.6&lt;/target&gt;
+		&lt;encoding&gt;UTF-8&lt;/encoding&gt;
+		&lt;compilerArgument&gt;-Adao.subpackage=impl&lt;/compilerArgument&gt;
+	&lt;/configuration&gt;
+&lt;/plugin&gt;</pre>
+</div>
+<p>
+					指定したいオプションが1つの場合は問題ありませんが、複数のオプションは<a class="externalLink" href="http://jira.codehaus.org/browse/MCOMPILER-62">Mavenの制限</a>により指定できません。
+					複数のオプションを使いたい場合は、maven-processor-pluginの利用を検討してください。
+					maven-processor-pluginとmaven-compiler-pluginの併用方法については、<a href="app_build.html">アプリケーションのビルド方法</a>を参照してください。
+				</p>
+</div>
+<div class="section"><h3><a name="Gradleでのオプション指定"></a>Gradleでのオプション指定</h3>
+<p>
+					compileJava.options.compilerArgsに指定します。
+					以下の例では、'-Adao.subpackage=impl' と '-Adao.suffix=Impl' が注釈処理のオプション指定です。
+				</p>
+<div class="source"><pre>def aptGeneratePath = 'build/apt_generated'
+compileJava.options.compilerArgs = ['-s', aptGeneratePath, '-Adao.subpackage=impl', '-Adao.suffix=Impl']</pre>
+</div>
+</div>
+</div>
+
+</div><!-- article -->
+
+</div><!-- contents_center -->
+
+<div id="footer">
+<address>  &copy; Copyright 
+                    <a href="http://www.seasarfoundation.org/">The Seasar Foundation</a>.
+            and the others
+    
+              2009-2014,
+        all rights reserved.
+  <a href="http://www.seasar.org">The Seasar Project</a>.
+</address>
+<div class="line"><span class="hide">spacer</span></div>
+</div><!-- footer -->
+
+</div><!-- wrapper -->
+
+</body>
+</html>

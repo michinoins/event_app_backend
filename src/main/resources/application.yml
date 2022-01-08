@@ -1,0 +1,12 @@
+spring:
+  profile: local
+  flyway:
+    enable: true
+    locations: classpath:db/createTable,classPath:db/insertData
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_database
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+    type: com.zaxxer.hikari.HikariDataSource
