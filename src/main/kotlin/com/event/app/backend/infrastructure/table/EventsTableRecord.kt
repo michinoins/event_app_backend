@@ -1,4 +1,4 @@
-package com.event_app_backend.infrastructure.table
+package com.event.app.backend.infrastructure.table
 
 import org.seasar.doma.Column
 import org.seasar.doma.Entity
@@ -9,8 +9,8 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 
 @Entity(immutable = true,naming=NamingType.SNAKE_LOWER_CASE)
-@Table(name = "event")
-class EventTableRecord(
+@Table(name = "events")
+class EventsTableRecord(
   @Id
   val id:String,
   @Column(name = "name")
@@ -21,7 +21,7 @@ class EventTableRecord(
   val eventDate: LocalDate,
   @Column(name = "availableTickets")
   val availableTickets:Int,
-  @Column(name = "crated_at")
+  @Column(name = "created_at")
   val createdAt:LocalDateTime,
   @Column(name = "updated_at")
   val updatedAt:LocalDateTime,

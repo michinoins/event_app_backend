@@ -7,4 +7,4 @@ SELECT
     created_at,
     updated_at
 FROM
-    event;
+    events;
