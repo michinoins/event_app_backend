@@ -1,4 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.utils.loadPropertyFromResources
+import org.jetbrains.kotlin.incremental.ChangesCollector.Companion.getNonPrivateNames
 
 
 plugins {
@@ -7,14 +9,13 @@ plugins {
   kotlin("jvm") version "1.6.10"
 	kotlin("plugin.spring") version "1.6.10"
   id ("org.seasar.doma.compile") version "1.1.0"
+  id ("org.seasar.doma.codegen") version "1.4.1"
+  kotlin("kapt") version "1.6.10"
+  idea
+
 
 }
 
-configurations {
-  compileOnly {
-    extendsFrom(configurations.annotationProcessor.get())
-  }
-}
 
 
 group = "com.event_app_backend"
@@ -23,6 +24,8 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
+  maven("https://oss.sonatype.org/content/repositories/snapshots/")
+
 }
 
 dependencies {
@@ -34,16 +37,22 @@ dependencies {
   /* mysql */
   runtimeOnly ("mysql:mysql-connector-java")
 
+  /* doma */
+  annotationProcessor ("org.seasar.doma:doma-processor:2.50.0")
+  implementation ("org.seasar.doma.boot:doma-spring-boot-starter:1.5.0")
+  implementation("org.seasar.doma:doma-kotlin:2.50.0")
+
+  kapt("org.seasar.doma:doma-processor:2.50.0")
+
 }
 
-tasks.withType<KotlinCompile> {
-	kotlinOptions {
-		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "11"
-	}
+configurations {
+  compileOnly {
+    extendsFrom(configurations.annotationProcessor.get())
+  }
 }
+
 
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-
