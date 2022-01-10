@@ -34,8 +34,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
   /* mysql */
-  runtimeOnly ("mysql:mysql-connector-java")
+  runtimeOnly ("mysql:mysql-connector-java:8.0.27")
 
   /* doma */
   annotationProcessor ("org.seasar.doma:doma-processor:2.50.0")

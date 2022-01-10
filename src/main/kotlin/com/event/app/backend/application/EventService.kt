@@ -39,8 +39,6 @@ class EventService (
     // book tickets
     eventRepository.bookTickets(eventId,bookTicketCnt,userId)
 
-
-
     return HttpStatus.OK
   }
 
