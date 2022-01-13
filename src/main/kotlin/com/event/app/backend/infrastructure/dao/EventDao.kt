@@ -1,4 +1,4 @@
-/*
+
 package com.event.app.backend.infrastructure.dao
 
 import com.event.app.backend.infrastructure.table.EventsTableRecord
@@ -25,4 +25,3 @@ interface EventDao {
 }
 
 
- */
