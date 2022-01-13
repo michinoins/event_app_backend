@@ -2,14 +2,17 @@ package com.event.app.backend.infrastructure.repository
 
 import com.event.app.backend.domain.model.event.Event
 import com.event.app.backend.domain.repository.EventRepository
+import com.event.app.backend.infrastructure.dao.EventDao
+import com.event.app.backend.infrastructure.dao.UserDao
 import com.event.app.backend.infrastructure.table.EventsTableRecord
+import com.event.app.backend.infrastructure.table.UsersTicketsTableRecord
 import org.springframework.stereotype.Repository
 import java.time.LocalDate
 
 @Repository
 class EventRepositoryImpl(
- // private val eventDao: EventDao,
- // private val userDao: UserDao,
+  private val eventDao: EventDao,
+  private val userDao: UserDao,
 ) : EventRepository {
 
   /**
@@ -47,9 +50,8 @@ class EventRepositoryImpl(
     // update Event Table
     subtractTicketCntForEvent(eventId,bookTicketCnt)
 
-
     // update User Table
-    // userDao.insertUsersTickets(UsersTicketsTableRecord.from(userId,eventId,bookTicketCnt))
+     userDao.insertUsersTickets(UsersTicketsTableRecord.from(userId,eventId,bookTicketCnt))
   }
 
   /**
@@ -57,15 +59,15 @@ class EventRepositoryImpl(
    */
   override fun cancel(eventId:String,userId:String) {
     // get user's ticketCnt
-    // val cancelTicketCnt =  userDao.getTicketCntByEventUserId(eventId,userId)
+     val cancelTicketCnt =  userDao.getTicketCntByEventUserId(eventId,userId)
     // subtract EventTicket
-    // subtractTicketCntForEvent(eventId,cancelTicketCnt)
+    subtractTicketCntForEvent(eventId,cancelTicketCnt)
   }
 
 
   private fun subtractTicketCntForEvent(eventId:String,subtractCount:Int){
     // subtract ticket count
-    // eventDao.subtractTicketCnt(eventId,subtractCount)
+     eventDao.subtractTicketCnt(eventId,subtractCount)
   }
 
   /**
